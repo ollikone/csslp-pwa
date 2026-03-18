@@ -27,7 +27,7 @@ function render() {
     // Update button text with bold active state
     const seqClass = !shuffled ? "mode-active" : "mode-inactive";
     const shufClass = shuffled ? "mode-active" : "mode-inactive";
-    shuffleBtn.innerHTML = `<span class="${seqClass}">Seq</span> / <span class="${shufClass}">Shuf</span>`;
+    shuffleBtn.innerHTML = `<span class="${seqClass}">Sequential</span> / <span class="${shufClass}">Shuffled</span>`;
 }
 
 modeBtn.onclick = () => { document.body.classList.toggle('dark'); };
