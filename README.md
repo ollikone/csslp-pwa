@@ -37,64 +37,47 @@ This app uses a **Weighted Shuffle Algorithm** to prioritize difficult concepts,
 4.  **Host It**: This app is designed to be hosted on **GitHub Pages**, Netlify, or Vercel.
 
 ## 📱 How to Use on Your Phone
-This app is designed to be used as a Home Screen App. Follow these steps to get a full-screen, offline-ready experience:
+This app is designed to be used as a **Home Screen App**. Follow these steps to get a full-screen, offline-ready experience:
 
-🍏 For iPhone (Safari)
-Open the website in Safari.
+### 🍏 For iPhone (Safari)
+* **Open** the website in Safari.
+* **Tap the Share button** (the square with an arrow pointing up at the bottom of the screen).
+* **Scroll down** the list of options and tap **"Add to Home Screen."**
+* **Name the app** "CSSLP Flash" and tap **Add**.
+* **Important**: Close Safari and open the app from your new Home Screen icon. This removes the browser address bars and enables offline mode.
 
-Tap the Share button (the square with an arrow pointing up at the bottom of the screen).
+### 🤖 For Android (Chrome)
+* **Open** the website in Chrome.
+* **Tap the three dots** (Menu) in the top right corner.
+* **Tap "Install app"** or **"Add to home screen."**
+* **Follow the prompts** to install. You can now launch it directly from your app drawer.
 
-Scroll down the list of options and tap "Add to Home Screen."
-
-Name the app "CSSLP Flash" and tap Add.
-
-Important: Close Safari and open the app from your new Home Screen icon. This removes the browser address bars and enables offline mode.
-
-🤖 For Android (Chrome)
-Open the website in Chrome.
-
-Tap the three dots (Menu) in the top right corner.
-
-Tap "Install app" or "Add to Home screen."
-
-Follow the prompts to install. You can now launch it directly from your app drawer.
-
-🎮 How to Study (Gestures)
+## 🎮 How to Study (Gestures)
 Once the app is open, you can navigate without using buttons:
 
-Tap the Card: Flips the card to reveal the answer.
+* **Tap the Card**: Flips the card to reveal the answer.
+* **Swipe LEFT**: Marks the card as **Difficult** (Red count +1). In Shuffle mode, this card will appear more often.
+* **Swipe RIGHT**: Marks the card as **Easy** (Green count +1). In Shuffle mode, this card will appear less often.
+* **Top Buttons**: Use the "Prev" and "Next" buttons to move manually through your study history.
 
-Swipe LEFT: Marks the card as Difficult (Red count +1). In Shuffle mode, this card will appear more often.
+## 💾 Saving Your Progress
+* **Automatic Sync**: Your scores are saved locally on your phone as you swipe.
+* **Export/Import**: To move progress between devices:
+    1.  On your Computer, click **Export** to download a `.json` file.
+    2.  Send that file to your phone (via Email, AirDrop, or iCloud).
+    3.  Open the app on your phone, tap **Import**, and select that file.
 
-Swipe RIGHT: Marks the card as Easy (Green count +1). In Shuffle mode, this card will appear less often.
-
-Top Buttons: Use the "Prev" and "Next" buttons to move manually through your study history.
-
-💾 Saving Your Progress
-Automatic Sync: Your scores are saved locally on your phone as you swipe.
-
-Export/Import: If you want to move your progress from your Computer to your Phone:
-
-On your Computer, click Export to download a .json file.
-
-Send that file to your phone (via Email, AirDrop, or iCloud).
-
-Open the app on your phone, tap Import, and select that file.
-
-Why use "Add to Home Screen"?
+## ❓ Why use "Add to Home Screen"?
 Using the app from the Home Screen instead of a browser tab provides several benefits:
-
-More Screen Space: The URL bar and browser buttons disappear.
-
-Offline Access: You can study on a plane or in areas with no signal.
-
-Persistence: iOS is less likely to clear your saved scores if the app is installed on the Home Screen.
+* **More Screen Space**: The URL bar and browser buttons disappear.
+* **Offline Access**: You can study on a plane or in areas with no signal.
+* **Persistence**: iOS is less likely to clear your saved scores if the app is installed on the Home Screen.
 
 ## 🧠 Technical Details
 
 * **Logic**: Vanilla JavaScript (ES6+).
 * **Persistence**: `window.localStorage`.
-* **UI**: CSS `preserve-3d` for hardware-accelerated card flipping.
+* **UI**: CSS `3D Transforms` for hardware-accelerated card flipping.
 * **Algorithm**: The weighted shuffle uses a frequency-pool approach:
     * *Weight Formula*: `Math.ceil(((Red + 1) / (Green + 1)) * 5)`
     * This ensures that difficult cards appear significantly more often than mastered ones.
