@@ -27,14 +27,7 @@ function render() {
     card.classList.remove('flipped'); 
     
     // Update Button Text
-    shuffleBtn.innerText = shuffled ? "Sequential" : "Shuffle";
-    
-    // Update Visibility/Color via Class
-    if (shuffled) {
-        shuffleBtn.classList.add('active-shuffle');
-    } else {
-        shuffleBtn.classList.remove('active-shuffle');
-    }
+    shuffleBtn.innerText = shuffled ? "*Sequential*/Shuffled" : "Sequential/*Shuffled*";
 }
 
 // Dark Mode Toggle Fix
