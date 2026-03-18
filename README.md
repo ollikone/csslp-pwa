@@ -36,14 +36,59 @@ This app uses a **Weighted Shuffle Algorithm** to prioritize difficult concepts,
 3.  **Add an Icon**: Place a `512x512` PNG file named `icon.png` in the root directory for the PWA icon to appear on mobile devices.
 4.  **Host It**: This app is designed to be hosted on **GitHub Pages**, Netlify, or Vercel.
 
-## 📱 Mobile Use (iPhone/Android)
+📱 How to Use on Your Phone
+This app is designed to be used as a Home Screen App. Follow these steps to get a full-screen, offline-ready experience:
 
-To get the best experience, install the app on your phone:
+🍏 For iPhone (Safari)
+Open the website in Safari.
 
-1.  Open the site in **Safari** (iOS) or **Chrome** (Android).
-2.  Tap the **Share** button (iOS) or **Menu** icon (Android).
-3.  Select **"Add to Home Screen."**
-4.  The app will now appear on your home screen and run in "Standalone Mode" (no browser address bars).
+Tap the Share button (the square with an arrow pointing up at the bottom of the screen).
+
+Scroll down the list of options and tap "Add to Home Screen."
+
+Name the app "CSSLP Flash" and tap Add.
+
+Important: Close Safari and open the app from your new Home Screen icon. This removes the browser address bars and enables offline mode.
+
+🤖 For Android (Chrome)
+Open the website in Chrome.
+
+Tap the three dots (Menu) in the top right corner.
+
+Tap "Install app" or "Add to Home screen."
+
+Follow the prompts to install. You can now launch it directly from your app drawer.
+
+🎮 How to Study (Gestures)
+Once the app is open, you can navigate without using buttons:
+
+Tap the Card: Flips the card to reveal the answer.
+
+Swipe LEFT: Marks the card as Difficult (Red count +1). In Shuffle mode, this card will appear more often.
+
+Swipe RIGHT: Marks the card as Easy (Green count +1). In Shuffle mode, this card will appear less often.
+
+Top Buttons: Use the "Prev" and "Next" buttons to move manually through your study history.
+
+💾 Saving Your Progress
+Automatic Sync: Your scores are saved locally on your phone as you swipe.
+
+Export/Import: If you want to move your progress from your Computer to your Phone:
+
+On your Computer, click Export to download a .json file.
+
+Send that file to your phone (via Email, AirDrop, or iCloud).
+
+Open the app on your phone, tap Import, and select that file.
+
+Why use "Add to Home Screen"?
+Using the app from the Home Screen instead of a browser tab provides several benefits:
+
+More Screen Space: The URL bar and browser buttons disappear.
+
+Offline Access: You can study on a plane or in areas with no signal.
+
+Persistence: iOS is less likely to clear your saved scores if the app is installed on the Home Screen.
 
 ## 🧠 Technical Details
 
