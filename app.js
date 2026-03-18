@@ -15,9 +15,7 @@ async function loadCards() {
         masterCards = await res.json(); 
         cards = [...masterCards]; 
         render(); 
-    } catch (e) {
-        console.error("Error loading flashcards:", e);
-    }
+    } catch (e) { console.error(e); }
 }
 
 function render() { 
@@ -26,21 +24,19 @@ function render() {
     back.innerText = cards[idx].answer; 
     card.classList.remove('flipped'); 
     
-    // Update Button Text
-    shuffleBtn.innerText = shuffled ? "*Sequential*/Shuffled" : "Sequential/*Shuffled*";
+    // Update button text with bold active state
+    const seqClass = !shuffled ? "mode-active" : "mode-inactive";
+    const shufClass = shuffled ? "mode-active" : "mode-inactive";
+    shuffleBtn.innerHTML = `<span class="${seqClass}">Seq</span> / <span class="${shufClass}">Shuf</span>`;
 }
 
-// Dark Mode Toggle Fix
-modeBtn.onclick = () => { 
-    document.body.classList.toggle('dark'); 
-};
+modeBtn.onclick = () => { document.body.classList.toggle('dark'); };
 
 shuffleBtn.onclick = () => { 
     const currentCard = cards[idx];
     shuffled = !shuffled; 
 
     if (shuffled) {
-        // Fisher-Yates Shuffle
         for (let i = cards.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [cards[i], cards[j]] = [cards[j], cards[i]];
@@ -50,37 +46,24 @@ shuffleBtn.onclick = () => {
     }
 
     idx = cards.findIndex(c => c.question === currentCard.question);
-    if (idx === -1) idx = 0;
     render(); 
 };
 
-document.getElementById('prevBtn').onclick = () => { 
-    idx = (idx - 1 + cards.length) % cards.length; 
-    render(); 
-};
+// Nav logic
+const next = () => { idx = (idx + 1) % cards.length; render(); };
+const prev = () => { idx = (idx - 1 + cards.length) % cards.length; render(); };
 
-document.getElementById('nextBtn').onclick = () => { 
-    idx = (idx + 1) % cards.length; 
-    render(); 
-};
+document.getElementById('prevBtn').onclick = prev;
+document.getElementById('nextBtn').onclick = next;
+card.onclick = () => { card.classList.toggle('flipped'); };
 
-card.onclick = () => { 
-    card.classList.toggle('flipped'); 
-};
-
-// Touch Gestures
+// Gesture Control
 let startX = 0;
-card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive: true});
 card.addEventListener('touchend', e => { 
     let endX = e.changedTouches[0].clientX; 
-    if (endX - startX > 50) { 
-        idx = (idx - 1 + cards.length) % cards.length; 
-        render(); 
-    } 
-    if (startX - endX > 50) { 
-        idx = (idx + 1) % cards.length; 
-        render(); 
-    } 
-});
+    if (endX - startX > 50) prev(); 
+    if (startX - endX > 50) next(); 
+}, {passive: true});
 
 loadCards();
