@@ -36,7 +36,7 @@ This app uses a **Weighted Shuffle Algorithm** to prioritize difficult concepts,
 3.  **Add an Icon**: Place a `512x512` PNG file named `icon.png` in the root directory for the PWA icon to appear on mobile devices.
 4.  **Host It**: This app is designed to be hosted on **GitHub Pages**, Netlify, or Vercel.
 
-📱 How to Use on Your Phone
+##📱 How to Use on Your Phone
 This app is designed to be used as a Home Screen App. Follow these steps to get a full-screen, offline-ready experience:
 
 🍏 For iPhone (Safari)
