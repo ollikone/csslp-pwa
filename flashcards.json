@@ -41,7 +41,7 @@
   },
   {
     "question": "Authorization to Operate",
-    "answer": "The official management decision given by a senior organizational official to  allow operation of an information system and explicitly accept the risk to organizational operations (including mission,  functions, image, or reputation), organizational assets, individuals, other organizations, and the nation based on the  1 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0 implementation of an agreed-on set of security controls. Source: NIST SP 800-53 Rev 4; NIST SP 800-53A Rev 1; NIST  SP 800-37 Rev 1"
+    "answer": "The official management decision given by a senior organizational official to  allow operation of an information system and explicitly accept the risk to organizational operations (including mission,  functions, image, or reputation), organizational assets, individuals, other organizations, and the nation based on the"
   },
   {
     "question": "Availability",
@@ -76,8 +76,8 @@
     "answer": "A nonprofit organization with a mission to \"make the connected  world a safer place for people, businesses, and governments through our core competencies of collaboration and  innovation.\" It has developed standards and technology tools toward the implementation and management of cyber  defenses."
   },
   {
-    "question": "Change Control Board",
-    "answer": "A committee of stakeholders comprised of management and security lead- ership that reviews the change process and specific proposed changes that affect enterprise operations. It makes  final and binding decisions on implementing changes."
+    "question": "A group of qualified people responsible for the process of  regulating and approving changes to hardware, firmware, software, and documentation throughout the development  and operational life cycle of an information system.",
+    "answer": "//quizlet.com/_h0wgp0"
   },
   {
     "question": "Cloud Controls Matrix (CCM)",
@@ -125,7 +125,7 @@
   },
   {
     "question": "Configuration Management (CM)",
-    "answer": "A collection of activities focused on establishing and main- taining the integrity of information technology products and information systems, through control of processes  for initializing, changing, and monitoring the configurations of those products and systems throughout the system  development life cycle. Source: NIST SP 800-53, Rev. 5 3 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "A collection of activities focused on establishing and main- taining the integrity of information technology products and information systems, through control of processes  for initializing, changing, and monitoring the configurations of those products and systems throughout the system  development life cycle. Source: NIST SP 800-53, Rev. 5"
   },
   {
     "question": "Configuration Management (CM) Plan",
@@ -169,7 +169,7 @@
   },
   {
     "question": "Data Loss Prevention",
-    "answer": "A set of tools and processes used to ensure that sensitive data is not lost, misused,  or accessed by unauthorized users. 4 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "A set of tools and processes used to ensure that sensitive data is not lost, misused,  or accessed by unauthorized users."
   },
   {
     "question": "Denial of Service (DoS) Attack",
@@ -209,7 +209,7 @@
   },
   {
     "question": "Dynamic Application Security Testing (DAST)",
-    "answer": "A process of testing an application or software  product in an operating state using tools that execute the software unit, application, or system under test, in ways that  attempt to make it reveal a potentially exploitable vulnerability. 5 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "A process of testing an application or software  product in an operating state using tools that execute the software unit, application, or system under test, in ways that  attempt to make it reveal a potentially exploitable vulnerability."
   },
   {
     "question": "Economy of Mechanism",
@@ -253,7 +253,7 @@
   },
   {
     "question": "Gray-box testing",
-    "answer": "A test methodology that assumes some knowledge of the internal structure and imple- mentation detail of the assessment object. Also known as focused testing. Source: NIST SP 800-53A Rev 1 6 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "A test methodology that assumes some knowledge of the internal structure and imple- mentation detail of the assessment object. Also known as focused testing. Source: NIST SP 800-53A Rev 1"
   },
   {
     "question": "Hardening",
@@ -301,7 +301,7 @@
   },
   {
     "question": "Institute of Electrical and Electronics Engineers (IEEE)",
-    "answer": "A professional organization that  sets standards for telecommunications, computer engineering, and similar disciplines. 7 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "A professional organization that  sets standards for telecommunications, computer engineering, and similar disciplines."
   },
   {
     "question": "Integrated Development Environment (IDE)",
@@ -341,7 +341,7 @@
   },
   {
     "question": "Key Risk Indicator (KRI)",
-    "answer": "Critical predictors/indicators of undesirable events that can adversely impact  an organization. The kind of metrics which are forward looking and contribute to the early warning sign that facilitates  enterprise to report risks, prevent calamity, and remediate them promptly. 8 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "Critical predictors/indicators of undesirable events that can adversely impact  an organization. The kind of metrics which are forward looking and contribute to the early warning sign that facilitates  enterprise to report risks, prevent calamity, and remediate them promptly."
   },
   {
     "question": "Least Privilege",
@@ -385,7 +385,7 @@
   },
   {
     "question": "Need-to-Know",
-    "answer": "Primarily associated with organizations that assign clearance levels to all users and classifi- cation levels to all assets; restricts users with the same clearance level from sharing information unless they are working  on the same effort. Entails compartmentalization. 9 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "Primarily associated with organizations that assign clearance levels to all users and classifi- cation levels to all assets; restricts users with the same clearance level from sharing information unless they are working  on the same effort. Entails compartmentalization."
   },
   {
     "question": "Network-Attached Storage (NAS)",
@@ -433,7 +433,7 @@
   },
   {
     "question": "Privacy Impact Assessment (PIA)",
-    "answer": "An analysis of how information is handled to ensure handling  conforms to applicable legal, regulatory, and policy requirements regarding privacy; to determine the risks and effects of  10 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0 creating, collecting, using, processing, storing, maintaining, disseminating, disclosing, and disposing of information in  identifiable form in an electronic information system; and to examine and evaluate protections and alternate processes  for handling information to mitigate potential privacy concerns."
+    "answer": "An analysis of how information is handled to ensure handling  conforms to applicable legal, regulatory, and policy requirements regarding privacy; to determine the risks and effects of"
   },
   {
     "question": "Provenance",
@@ -485,7 +485,7 @@
   },
   {
     "question": "Risk Assessment",
-    "answer": "The process of identifying and analyzing risks to organizational operations and assets,  individuals, and other entities. The analysis is performed as a part of risk management incorporates threat and  vulnerability analyses and considers mitigations provided by security controls planned or in place. 11 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "The process of identifying and analyzing risks to organizational operations and assets,  individuals, and other entities. The analysis is performed as a part of risk management incorporates threat and  vulnerability analyses and considers mitigations provided by security controls planned or in place."
   },
   {
     "question": "Risk Avoidance",
@@ -541,7 +541,7 @@
   },
   {
     "question": "Separation of Duties",
-    "answer": "The practice of ensuring that no critical process can be completed by a single  person. 12 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "The practice of ensuring that no critical process can be completed by a single  person."
   },
   {
     "question": "Service-Level Agreement (SLA)",
@@ -593,7 +593,7 @@
   },
   {
     "question": "Static Application Security Testing (SAST)",
-    "answer": "Detects application vulnerabilities by scanning the  source code, byte code, or binaries of an application. Also known as white-box testing. 13 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "Detects application vulnerabilities by scanning the  source code, byte code, or binaries of an application. Also known as white-box testing."
   },
   {
     "question": "Storage Area Network (SAN)",
@@ -641,7 +641,7 @@
   },
   {
     "question": "Testing",
-    "answer": "The process of exercising one or more assessment objects (e.g., activities or mechanisms) under  specified conditions to compare actual with expected behavior. 14 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0"
+    "answer": "The process of exercising one or more assessment objects (e.g., activities or mechanisms) under  specified conditions to compare actual with expected behavior."
   },
   {
     "question": "Third-Party Components",
@@ -689,7 +689,7 @@
   },
   {
     "question": "Virtualization",
-    "answer": "The creation of a virtual version of an actual piece of technology, such as an operating  system (OS), a server, a storage device or a network resource. Uses software that simulates hardware functionality to  15 / 16 CSSLP 6th Edition - Practice Question Bank Study online at https://quizlet.com/_h0wgp0 create a virtual system. This practice lets IT organizations run multiple OSes, more than one virtual system and various  applications on a single server."
+    "answer": "The creation of a virtual version of an actual piece of technology, such as an operating  system (OS), a server, a storage device or a network resource. Uses software that simulates hardware functionality to"
   },
   {
     "question": "Vulnerability",
@@ -714,5 +714,9 @@
   {
     "question": "Zero Trust",
     "answer": "A collection of concepts and ideas designed to minimize uncertainty in enforcing accurate,  least privilege per-request access decisions in information systems and services in the face of a network viewed as  compromised. 16 / 16"
+  },
+  {
+    "question": "Change Control Board",
+    "answer": "A committee of stakeholders comprised of management and security lead- ership that reviews the change process and specific proposed changes that affect enterprise operations. It makes  final and binding decisions on implementing changes."
   }
 ]

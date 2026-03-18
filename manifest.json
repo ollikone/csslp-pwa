@@ -1,2 +1,9 @@
 
-{ "name":"CSSLP Flashcards", "short_name":"CSSLP", "start_url":"index.html", "display":"standalone", "background_color":"#000000", "theme_color":"#000000" }
+{ 
+    "name":"CSSLP Flashcards", 
+    "short_name":"CSSLP", 
+    "start_url":"index.html", 
+    "display":"standalone", 
+    "background_color":"#000000", 
+    "theme_color":"#000000" 
+}

@@ -1,3 +1,4 @@
+
 let cards = [];
 let idx = 0;
 let shuffled = false;
@@ -11,7 +12,7 @@ async function loadCards() {
         cards = await res.json(); 
         render(); 
     } catch (e) {
-        console.error("Failed to load cards:", e);
+        console.error("Error loading flashcards:", e);
     }
 }
 
@@ -26,7 +27,11 @@ document.getElementById('modeBtn').onclick = () => { document.body.classList.tog
 
 document.getElementById('shuffleBtn').onclick = () => { 
     shuffled = !shuffled; 
-    if (shuffled) cards.sort(() => Math.random() - 0.5); 
+    if (shuffled) {
+        cards.sort(() => Math.random() - 0.5);
+    } else {
+        // Re-fetching or reloading logic to reset order could go here if desired
+    }
     idx = 0; 
     render(); 
 };
@@ -42,5 +47,9 @@ card.addEventListener('touchend', e => {
     if (endX - startX > 50) { idx = (idx - 1 + cards.length) % cards.length; render(); } 
     if (startX - endX > 50) { idx = (idx + 1) % cards.length; render(); } 
 });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').catch(err => console.log('SW reg error:', err));
+}
 
 loadCards();
