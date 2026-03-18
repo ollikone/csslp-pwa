@@ -1,0 +1,9 @@
+{
+  "name": "CSSLP Flashcards",
+  "short_name": "CSSLP",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003366",
+  "icons": []
+}

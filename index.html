@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSSLP Flashcards</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    header { padding: 10px; background: #003366; color: white; text-align: center; }
+    #buttons { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; justify-content: center; }
+    button { padding: 10px 14px; font-size: 16px; border-radius: 6px; border: 1px solid #003366; background: #f0f6ff; cursor: pointer; }
+    iframe { width: 100%; height: calc(100vh - 120px); border: none; }
+  </style>
+</head>
+<body>
+  <header><h2>CSSLP Flashcards</h2></header>
+  <div id="buttons">
+    <button onclick="loadDomain(1)">Domain 1</button>
+    <button onclick="loadDomain(2)">Domain 2</button>
+    <button onclick="loadDomain(3)">Domain 3</button>
+    <button onclick="loadDomain(4)">Domain 4</button>
+    <button onclick="loadDomain(5)">Domain 5</button>
+    <button onclick="loadDomain(6)">Domain 6</button>
+    <button onclick="loadDomain(7)">Domain 7</button>
+    <button onclick="loadDomain(8)">Domain 8</button>
+  </div>
+  <iframe id="view"></iframe>
+  <script>
+    const base = "https://www.isc2.org/certifications/csslp/csslp-self-study-resources/csslp-flash-cards-";
+    function loadDomain(n) {
+      document.getElementById("view").src = base + n;
+    }
+    loadDomain(1);
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>
