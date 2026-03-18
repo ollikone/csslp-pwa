@@ -1,6 +1,6 @@
 let masterCards = []; 
-let cards = [];       
-let idx = 0;
+let history = [];     // Tracks indices of cards seen
+let hIdx = -1;        // Current position in history
 let shuffled = false;
 
 const card = document.getElementById('card');
@@ -26,11 +26,81 @@ async function loadCards() {
             return { ...c, red: s ? s.r : 0, green: s ? s.g : 0 };
         });
         
-        cards = [...masterCards]; 
+        // Initialize History
+        history = [0];
+        hIdx = 0;
+        
         updateStats();
         render(); 
-    } catch (e) { console.error(e); }
+    } catch (e) { console.error("Error loading cards:", e); }
 }
+
+function render() { 
+    if (masterCards.length === 0) return;
+    const currentIdx = history[hIdx];
+    const current = masterCards[currentIdx];
+    
+    front.innerText = current.question; 
+    back.innerText = current.answer; 
+    card.classList.remove('flipped'); 
+    
+    redDisplay.innerText = current.red;
+    greenDisplay.innerText = current.green;
+    
+    // Toggle Text Clarity
+    const s1 = !shuffled ? "active-mode" : "inactive-mode";
+    const s2 = shuffled ? "active-mode" : "inactive-mode";
+    shuffleBtn.innerHTML = `<span class="${s1}">Seq</span> | <span class="${s2}">Shuffle</span>`;
+}
+
+// --- NAVIGATION LOGIC (The History Stack) ---
+
+const next = () => { 
+    if (hIdx < history.length - 1) {
+        // Move forward in existing history
+        hIdx++;
+    } else {
+        // Generate a new step
+        let nextCardIdx;
+        if (shuffled) {
+            nextCardIdx = getWeightedIndex();
+        } else {
+            nextCardIdx = (history[hIdx] + 1) % masterCards.length;
+        }
+        history.push(nextCardIdx);
+        hIdx++;
+    }
+    render(); 
+};
+
+const prev = () => { 
+    if (hIdx > 0) {
+        hIdx--;
+        render();
+    }
+};
+
+function getWeightedIndex() {
+    let pool = [];
+    masterCards.forEach((c, i) => {
+        // Higher red-to-green ratio = more slots in the random pool
+        const weight = Math.ceil(((c.red + 1) / (c.green + 1)) * 5);
+        for (let s = 0; s < weight; s++) pool.push(i);
+    });
+    return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// --- SCORE LOGIC ---
+
+const handleVote = (isRed) => {
+    const currentIdx = history[hIdx];
+    const target = masterCards[currentIdx];
+    isRed ? target.red++ : target.green++;
+    saveProgress();
+    render();
+    // After voting, we wait a moment and move to the NEXT card
+    setTimeout(next, 250);
+};
 
 function saveProgress() {
     const stats = masterCards.map(c => ({ q: c.question, r: c.red, g: c.green }));
@@ -46,68 +116,40 @@ function updateStats() {
     statsText.innerText = `Mastery: ${percent}% (${mastered}/${total} cards)`;
 }
 
-function render() { 
-    if (cards.length === 0) return;
-    const current = cards[idx];
-    front.innerText = current.question; 
-    back.innerText = current.answer; 
-    card.classList.remove('flipped'); 
-    
-    redDisplay.innerText = current.red;
-    greenDisplay.innerText = current.green;
-    
-    // Toggle Text Clarity
-    const s1 = !shuffled ? "active-mode" : "inactive-mode";
-    const s2 = shuffled ? "active-mode" : "inactive-mode";
-    shuffleBtn.innerHTML = `<span class="${s1}">Seq</span> | <span class="${s2}">Shuffle</span>`;
-}
+// --- EVENT BINDINGS ---
 
-function getWeightedIndex() {
-    let pool = [];
-    masterCards.forEach((c, i) => {
-        const weight = Math.ceil(((c.red + 1) / (c.green + 1)) * 5);
-        for (let s = 0; s < weight; s++) pool.push(i);
-    });
-    return pool[Math.floor(Math.random() * pool.length)];
-}
+document.getElementById('modeBtn').onclick = () => document.body.classList.toggle('dark');
 
-const next = () => { 
-    idx = shuffled ? getWeightedIndex() : (idx + 1) % cards.length;
+shuffleBtn.onclick = () => { 
+    shuffled = !shuffled; 
+    // When switching modes, we clear the 'forward' history to start a new path
+    if (hIdx < history.length - 1) {
+        history = history.slice(0, hIdx + 1);
+    }
     render(); 
 };
 
-const handleVote = (isRed) => {
-    const currentQ = cards[idx].question;
-    const target = masterCards.find(c => c.question === currentQ);
-    isRed ? target.red++ : target.green++;
-    saveProgress();
-    render();
-    setTimeout(next, 250);
-};
-
-// Listeners
-document.getElementById('modeBtn').onclick = () => document.body.classList.toggle('dark');
-shuffleBtn.onclick = () => { shuffled = !shuffled; render(); };
 document.getElementById('resetBtn').onclick = () => {
-    const target = masterCards.find(c => c.question === cards[idx].question);
+    const target = masterCards[history[hIdx]];
     target.red = 0; target.green = 0;
     saveProgress(); render();
 };
+
 document.getElementById('clearAllBtn').onclick = () => {
     if(confirm("Clear all mastery progress?")) {
         masterCards.forEach(c => { c.red = 0; c.green = 0; });
         saveProgress(); render();
     }
 };
-document.getElementById('prevBtn').onclick = () => { idx = (idx - 1 + cards.length) % cards.length; render(); };
+
+document.getElementById('prevBtn').onclick = prev;
 document.getElementById('nextBtn').onclick = next;
 card.onclick = () => card.classList.toggle('flipped');
 
-// Logic for clicking icons
 redDisplay.onclick = (e) => { e.stopPropagation(); handleVote(true); };
 greenDisplay.onclick = (e) => { e.stopPropagation(); handleVote(false); };
 
-// Swipe Logic (Directly linked to Screen Left/Right)
+// Swipe Logic
 let startX = 0;
 card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive: true});
 card.addEventListener('touchend', e => { 
