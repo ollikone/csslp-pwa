@@ -14,16 +14,27 @@
         <button id='modeBtn'>Dark/Light</button>
         <button id='shuffleBtn'>Sequential/Shuffle</button>
         <button id='resetBtn'>Reset Card</button>
-        <button id='prevBtn'>&lt; Prev</button>
-        <button id='nextBtn'>Next &gt;</button>
+        <button id='exportBtn'>Export</button>
+        <button id='importBtn'>Import</button>
+        <input type="file" id="fileInput" style="display:none" accept=".json">
+        <div style="width:100%; display:flex; justify-content:center; gap:10px; margin-top:5px;">
+            <button id='prevBtn'>&lt; Prev</button>
+            <button id='nextBtn'>Next &gt;</button>
+        </div>
     </div>
 
     <div id='card' class='card'>
         <div id="count-red" class="counter counter-red">0</div>
         <div id="count-green" class="counter counter-green">0</div>
-        
         <div id='card-front' class='face front'></div>
         <div id='card-back' class='face back'></div>
+    </div>
+
+    <div id="stats-container">
+        <div class="progress-bg">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="stats-text">Mastery: 0% (0/0 cards)</div>
     </div>
 
     <script src='app.js'></script>
