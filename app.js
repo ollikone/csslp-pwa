@@ -1,18 +1,21 @@
-
-let cards = [];
+let masterCards = []; 
+let cards = [];       
 let idx = 0;
 let shuffled = false;
+
 const card = document.getElementById('card');
 const front = document.getElementById('card-front');
 const back = document.getElementById('card-back');
+const shuffleBtn = document.getElementById('shuffleBtn');
 
 async function loadCards() { 
     try {
         const res = await fetch('flashcards.json'); 
-        cards = await res.json(); 
+        masterCards = await res.json(); 
+        cards = [...masterCards]; // Start with a copy of the master list
         render(); 
     } catch (e) {
-        console.error("Error loading flashcards:", e);
+        console.error("Fetch error:", e);
     }
 }
 
@@ -21,25 +24,38 @@ function render() {
     front.innerText = cards[idx].question; 
     back.innerText = cards[idx].answer; 
     card.classList.remove('flipped'); 
+    
+    // UI Feedback for Shuffle button
+    shuffleBtn.innerText = shuffled ? "Sequential" : "Shuffle";
+    shuffleBtn.style.color = shuffled ? "#00ff00" : ""; 
 }
 
-document.getElementById('modeBtn').onclick = () => { document.body.classList.toggle('dark'); };
-
-document.getElementById('shuffleBtn').onclick = () => { 
+shuffleBtn.onclick = () => { 
+    const currentCard = cards[idx];
     shuffled = !shuffled; 
+
     if (shuffled) {
-        cards.sort(() => Math.random() - 0.5);
+        // Shuffle using Fisher-Yates for better randomization
+        for (let i = cards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [cards[i], cards[j]] = [cards[j], cards[i]];
+        }
     } else {
-        // Re-fetching or reloading logic to reset order could go here if desired
+        // Restore to original master list order
+        cards = [...masterCards];
     }
-    idx = 0; 
+
+    // Find our new index in the new list so we don't jump to a different card
+    idx = cards.findIndex(c => c.question === currentCard.question);
     render(); 
 };
 
+// Navigation logic
 document.getElementById('prevBtn').onclick = () => { idx = (idx - 1 + cards.length) % cards.length; render(); };
 document.getElementById('nextBtn').onclick = () => { idx = (idx + 1) % cards.length; render(); };
 card.onclick = () => { card.classList.toggle('flipped'); };
 
+// Swipe Logic for iPhone
 let startX = 0;
 card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
 card.addEventListener('touchend', e => { 
@@ -47,9 +63,5 @@ card.addEventListener('touchend', e => {
     if (endX - startX > 50) { idx = (idx - 1 + cards.length) % cards.length; render(); } 
     if (startX - endX > 50) { idx = (idx + 1) % cards.length; render(); } 
 });
-
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').catch(err => console.log('SW reg error:', err));
-}
 
 loadCards();
