@@ -4,7 +4,8 @@
     --card-bg: #f5f5f5; 
     --card-fg: #000000; 
     --topbar-bg: #eeeeee;
-    --accent-green: #157347; 
+    --accent-green: #157347;
+    --accent-red: #d93025; 
 }
 
 .dark { 
@@ -21,7 +22,6 @@ body {
     font-family: -apple-system, sans-serif; 
     background-color: var(--bg); 
     color: var(--fg);
-    /* Prevents the whole page from bouncing/scrolling when swiping cards */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ body {
 
 #topbar { 
     padding: 12px; 
-    padding-top: env(safe-area-inset-top); /* iPhone Notch support */
+    padding-top: env(safe-area-inset-top);
     background: var(--topbar-bg); 
     display: flex; 
     gap: 10px; 
@@ -47,11 +47,9 @@ button {
     border: 1px solid #ccc;
     background: var(--card-bg);
     color: var(--card-fg);
-    /* Disables double-tap zoom on buttons */
     touch-action: manipulation; 
 }
 
-/* Styles for the "Sequential / Shuffled" text toggle */
 .mode-inactive { opacity: 0.5; font-weight: normal; }
 .mode-active { font-weight: bold; color: var(--accent-green); }
 
@@ -68,25 +66,53 @@ button {
     padding: 25px; 
     position: relative; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    /* Ensures swipes don't trigger page scroll */
     touch-action: none; 
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
+
+#card.flipped { transform: rotateY(180deg); }
 
 .face { 
+    position: absolute; 
     width: 100%; 
     height: 100%; 
-    display: flex;          
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;    
-    text-align: center;
-    /* Allow scrolling ONLY inside the card if text is too long */
-    overflow-y: auto; 
-    touch-action: pan-y; 
+    backface-visibility: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-size: 1.2rem; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.front { font-size: 1.6em; font-weight: bold; }
-.back { display: none; font-size: 1.1em; line-height: 1.4; }
+.back { transform: rotateY(180deg); }
 
-.card.flipped .front { display: none; }
-.card.flipped .back { display: flex; }
+/* Counter styles */
+.counter {
+    position: absolute;
+    top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.counter-red {
+    left: 15px;
+    color: var(--accent-red);
+    border: 2px solid var(--accent-red);
+}
+
+.counter-green {
+    right: 15px;
+    color: var(--accent-green);
+    border: 2px solid var(--accent-green);
+}
