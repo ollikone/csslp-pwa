@@ -27,7 +27,7 @@ function render() {
     card.classList.remove('flipped'); 
     
     // Update Button Text
-    shuffleBtn.innerText = shuffled ? "*Sequential*/Shuffled" : "Sequential/*Shuffled*";
+    shuffleBtn.innerText = shuffled ? "Sequential/*Shuffled*" : "*Sequential*/Shuffled";
 }
 
 // Dark Mode Toggle Fix
