@@ -1,24 +1,24 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title>CSSLP Flashcards</title>
-<link rel="manifest" href="manifest.json" />
-<link rel="stylesheet" href="style.css" />
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='style.css'>
 </head>
 <body>
-<div id="topbar">
-<button id="modeBtn">Dark/Light</button>
-<button id="shuffleBtn">Shuffle</button>
+<div id='topbar'>
+<button id='modeBtn'>Dark/Light</button>
+<button id='shuffleBtn'>Shuffle</button>
+<button id='prevBtn'>&lt; Prev</button>
+<button id='nextBtn'>Next &gt;</button>
 </div>
-<div id="card">
-<div id="card-inner">
-<div id="card-front"></div>
-<div id="card-back"></div>
+<div id='card' class='card'>
+ <div id='card-front' class='face front'></div>
+ <div id='card-back' class='face back'></div>
 </div>
-</div>
-<script src="app.js"></script>
+<script src='app.js'></script>
 </body>
 </html>
