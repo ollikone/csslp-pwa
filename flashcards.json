@@ -1,47 +1,47 @@
 [
   {
     "question": "Abuse (Misuse) Case",
-    "answer": "A reference to a use case from a hostile actor's perspective. Created from use cases  and likely representing an interaction with the system in ways that the system was not designed to be used."
+    "answer": "A reference to a use case from a hostile actor's perspective. Created from use cases and likely representing an interaction with the system in ways that the system was not designed to be used."
   },
   {
     "question": "Adequate Security",
-    "answer": "Security commensurate with the risk and magnitude of harm resulting from the loss,  misuse, or unauthorized access to or modification of information. Source: OMB Circular A-130. This includes assuring  that systems and applications operate effectively and provide the appropriate confidentiality, integrity and availability  through cost-effective management, personnel, operational, and technical controls."
+    "answer": "Security commensurate with the risk and magnitude of harm resulting from the loss,  misuse, or unauthorized access to or modification of information. Source: OMB Circular A-130. This includes assuring that systems and applications operate effectively and provide the appropriate confidentiality, integrity and availability through cost-effective management, personnel, operational, and technical controls."
   },
   {
     "question": "Adversarial Machine Learning (AML)",
-    "answer": "The process of extracting information about the behavior  and characteristics of an ML system and/or learning how to manipulate the inputs into an ML system."
+    "answer": "The process of extracting information about the behavior and characteristics of an ML system and/or learning how to manipulate the inputs into an ML system."
   },
   {
     "question": "Agile Development",
-    "answer": "Development that uses small team environments and focuses on collaborative, iterative  learning, building, testing, and deployment of capabilities to operational use. It is used to address the need for rapid  software development and deployment cycles, perhaps many cycles per day. This type of development follows patterns  of activities such as \"scrum,\" \"sprint,\" or \"safe\" to manage change and develop and deploy working, reliable, and  verifiable functions."
+    "answer": "Development that uses small team environments and focuses on collaborative, iterative learning, building, testing, and deployment of capabilities to operational use. It is used to address the need for rapid software development and deployment cycles, perhaps many cycles per day. This type of development follows patterns of activities such as \"scrum,\" \"sprint,\" or \"safe\" to manage change and develop and deploy working, reliable, and verifiable functions."
   },
   {
     "question": "Anonymization",
-    "answer": "The process of removing personal identifiers (directly or indirectly) that may lead to an  individual being identified. Removing the linkage between an individual and any direct or indirect identifiers to prevent  data analysis tools or other intelligent mechanisms from collating or pulling data from multiple sources to identify an  individual or sensitive information."
+    "answer": "The process of removing personal identifiers (directly or indirectly) that may lead to an individual being identified. Removing the linkage between an individual and any direct or indirect identifiers to prevent data analysis tools or other intelligent mechanisms from collating or pulling data from multiple sources to identify an individual or sensitive information."
   },
   {
     "question": "Application Programming Interface (API)",
-    "answer": "A piece of software within a system that defines how  other components or systems can use that system. This interface defines the types of requests that can be made, how  to make them, and the data formats that must be used."
+    "answer": "A piece of software within a system that defines how other components or systems can use that system. This interface defines the types of requests that can be made, how to make them, and the data formats that must be used."
   },
   {
     "question": "Architectural Risk Assessment (ARA)",
-    "answer": "A security analysis framework that includes tools and tech- niques intended for applications and services."
+    "answer": "A security analysis framework that includes tools and techniques intended for applications and services."
   },
   {
     "question": "Attack surface",
-    "answer": "The totality of all exposure points and different ways that an adversary can inflict damage.  Different security testing methods find different vulnerability types."
+    "answer": "The totality of all exposure points and different ways that an adversary can inflict damage. Different security testing methods find different vulnerability types."
   },
   {
     "question": "Audit",
-    "answer": "Independent review and examination of records and activities to assess the adequacy of system controls  and ensure compliance with established policies and operational procedures. Source: CNSSI-40089"
+    "answer": "Independent review and examination of records and activities to assess the adequacy of system controls and ensure compliance with established policies and operational procedures. Source: CNSSI-40089"
   },
   {
     "question": "Authentication",
-    "answer": "The act of identifying or verifying the eligibility of a station, originator, or individual to access  specific categories of information."
+    "answer": "The act of identifying or verifying the eligibility of a station, originator, or individual to access specific categories of information."
   },
   {
     "question": "Authorization to Operate",
-    "answer": "The official management decision given by a senior organizational official to  allow operation of an information system and explicitly accept the risk to organizational operations (including mission,  functions, image, or reputation), organizational assets, individuals, other organizations, and the nation based on the"
+    "answer": "The official management decision given by a senior organizational official to allow operation of an information system and explicitly accept the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the nation based on the implementation of an agreed-on set of security controls. Source: NIST SP 800-53 Rev 4; NIST SP 800-53A Rev 1; NIST SP 800-37 Rev 1"
   },
   {
     "question": "Availability",
@@ -49,55 +49,55 @@
   },
   {
     "question": "Black-box testing",
-    "answer": "A test methodology that assumes no knowledge of the internal structure and imple- mentation detail of the assessment object. Source: NIST SP 800-53A Rev 1"
+    "answer": "A test methodology that assumes no knowledge of the internal structure and implementation detail of the assessment object. Source: NIST SP 800-53A Rev 1"
   },
   {
     "question": "Buffer",
-    "answer": "A reference to an area (chunk) of memory. Normally set aside to temporarily hold data for processing  or transfer from one place to another."
+    "answer": "A reference to an area (chunk) of memory. Normally set aside to temporarily hold data for processing or transfer from one place to another."
   },
   {
     "question": "Buffer Overflow",
-    "answer": "A condition at an interface under which more input can be placed into a buffer or data  holding area than the intended capacity allocated (due to insecure or unbound allocation parameters), which overwrites  other information. Attackers exploit such a condition to crash a system or to insert specially crafted code that allows  them to gain control of the system."
+    "answer": "A condition at an interface under which more input can be placed into a buffer or data holding area than the intended capacity allocated (due to insecure or unbound allocation parameters), which overwrites other information. Attackers exploit such a condition to crash a system or to insert specially crafted code that allows them to gain control of the system."
   },
   {
     "question": "Building Security in Maturity Model (BSIMM)",
-    "answer": "A descriptive model that provides a baseline of  observed software security initiatives and activities from a collection of software development shops. Used as a reference  tool to identify goals and objectives, gauge progress, or select activities to implement into an organization's strategy."
+    "answer": "A descriptive model that provides a baseline of observed software security initiatives and activities from a collection of software development shops. Used as a reference tool to identify goals and objectives, gauge progress, or select activities to implement into an organization's strategy."
   },
   {
     "question": "Business Continuity Plan (BCP)",
-    "answer": "The documentation of a predetermined set of instructions or  procedures that describe how an organization's mission/business processes will be sustained during and after a  significant disruption."
+    "answer": "The documentation of a predetermined set of instructions or procedures that describe how an organization's mission/business processes will be sustained during and after a significant disruption."
   },
   {
     "question": "Business Impact Analysis (BIA)",
-    "answer": "The process of determining the criticality of business activities and  associated resource requirements to ensure operational resilience and continuity of operations during and after a  business disruption. This quantifies the impacts of disruptions on service delivery, risks to service delivery, recovery  time objectives (RTOs) and recovery point objectives (RPOs). These recovery requirements are then used to develop  strategies, solutions, and plans."
+    "answer": "The process of determining the criticality of business activities and associated resource requirements to ensure operational resilience and continuity of operations during and after a business disruption. This quantifies the impacts of disruptions on service delivery, risks to service delivery, recovery time objectives (RTOs) and recovery point objectives (RPOs). These recovery requirements are then used to develop strategies, solutions, and plans."
   },
   {
     "question": "Center for Internet Security (CIS)",
-    "answer": "A nonprofit organization with a mission to \"make the connected  world a safer place for people, businesses, and governments through our core competencies of collaboration and  innovation.\" It has developed standards and technology tools toward the implementation and management of cyber  defenses."
+    "answer": "A nonprofit organization with a mission to \"make the connected world a safer place for people, businesses, and governments through our core competencies of collaboration and innovation.\" It has developed standards and technology tools toward the implementation and management of cyber defenses."
   },
   {
-    "question": "A group of qualified people responsible for the process of  regulating and approving changes to hardware, firmware, software, and documentation throughout the development  and operational life cycle of an information system.",
-    "answer": "//quizlet.com/_h0wgp0"
+    "question": "Change Control Board",
+    "answer": "1. A committee of stakeholders comprised of management and security leadership that reviews the change process and specific proposed changes that affect enterprise operations. It makes final and binding decisions on implementing changes. 2. A group of qualified people responsible for the process of regulating and approving changes to hardware, firmware, software, and documentation throughout the development and operational life cycle of an information system."
   },
   {
     "question": "Cloud Controls Matrix (CCM)",
-    "answer": "A tool for the systematic assessment of a cloud implementation that  provides guidance on which security controls should be implemented by which actor within the cloud supply chain."
+    "answer": "A tool for the systematic assessment of a cloud implementation that provides guidance on which security controls should be implemented by which actor within the cloud supply chain."
   },
   {
     "question": "Cloud Service Provider",
-    "answer": "A service provider who offers customers storage or software solutions available  via a public network, usually the internet."
+    "answer": "A service provider who offers customers storage or software solutions available via a public network, usually the internet."
   },
   {
     "question": "Code Signing",
-    "answer": "A reference to the process of digitally signing executables/scripts with the objective of  providing assurance of integrity and authenticity of the code. Object signing certificates may be used for this purpose."
+    "answer": "A reference to the process of digitally signing executables/scripts with the objective of providing assurance of integrity and authenticity of the code. Object signing certificates may be used for this purpose."
   },
   {
     "question": "Commercial-Off-the-Shelf (COTS)",
-    "answer": "A software and/or hardware product that is commercially  ready-made and available for sale, lease, or license to the public. Source: NSA/CSS Policy 3-14"
+    "answer": "A software and/or hardware product that is commercially ready-made and available for sale, lease, or license to the public. Source: NSA/CSS Policy 3-14"
   },
   {
     "question": "Common Criteria (CC)",
-    "answer": "For information technology security evaluation, this is the technical basis for an  international agreement that ensures products can be evaluated by competent and independent licensed laboratories  to determine the fulfilment of particular security properties, to a certain extent or assurance. The certification of security  properties of an evaluated product can be issued by a number of Certificate Authorizing Schemes, with this certification  being based on the result of their evaluation. Source: Common Criteria (CC) Portal"
+    "answer": "For information technology security evaluation, this is the technical basis for an international agreement that ensures products can be evaluated by competent and independent licensed laboratories to determine the fulfilment of particular security properties, to a certain extent or assurance. The certification of security properties of an evaluated product can be issued by a number of Certificate Authorizing Schemes, with this certification being based on the result of their evaluation. Source: Common Criteria (CC) Portal"
   },
   {
     "question": "Common Vulnerabilities and Exposures (CVE)",
