@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSSLP Flashcards</title>
 
-  <iframe src="https://quizlet.com/1029439620/flashcards/embed?i=72xcbq&x=1jj1" height="500" width="100%" style="border:0"></iframe>
-  <link rel="manifesttyle>
-    body {
+  <!-- Correct manifest -->
+  <link rel="manifest" href="manifest
       margin: 0;
       padding: 0;
       font-family: sans-serif;
       background: #f8f9fb;
     }
-  
+
     header {
       background: #003366;
       color: white;
@@ -21,21 +20,22 @@
       text-align: center;
       font-size: 20px;
     }
-  
-    /* Hide extra box from Quizlet */
+
+    /* Hide Quizlet bottom box */
     #cardContainer {
       position: fixed;
-      top: 60px;
+      top: 60px; /* Header height */
       left: 0;
       right: 0;
       bottom: 0;
       overflow: hidden;
     }
-  
+
     iframe {
       width: 100%;
-      height: calc(100% + 60px); /* pushes bottom bar outside visible region */
+      height: calc(100% + 80px); /* pushes Quizlet footer below view */
       border: 0;
+      display: block;
     }
   </style>
 </head>
@@ -44,14 +44,10 @@
   <header>CSSLP Flashcards</header>
 
   <div id="cardContainer">
-    <iframe 
+    <iframe
       id="flashcards"
-flashcards/embed?i=72xcbq&x=1jj1
-    </iframe>
-  </div>
-
-  <script>
-    if ("serviceWorker" in navigator) {
+      src="https://quizlet.com/1029439620/flashcards/embed?i=72xcbq&x=1jj1"
+      allowrker" in navigator) {
       navigator.serviceWorker.register("service-worker.js");
     }
   </script>
