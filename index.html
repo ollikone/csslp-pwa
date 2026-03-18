@@ -1,26 +1,31 @@
-
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-<title>CSSLP Flashcards</title>
-<link rel='manifest' href='manifest.json'>
-<link rel='stylesheet' href='style.css'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <title>CSSLP Flashcards</title>
+    <link rel='manifest' href='manifest.json'>
+    <link rel='stylesheet' href='style.css'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
-<div id='topbar'>
-<button id='modeBtn'>Dark/Light</button>
-<button id='shuffleBtn'>Sequential/Shuffle</button>
-<button id='prevBtn'>&lt; Prev</button>
-<button id='nextBtn'>Next &gt;</button>
-</div>
-<div id='card' class='card'>
- <div id='card-front' class='face front'></div>
- <div id='card-back' class='face back'></div>
-</div>
-<script src='app.js'></script>
+    <div id='topbar'>
+        <button id='modeBtn'>Dark/Light</button>
+        <button id='shuffleBtn'>Sequential/Shuffle</button>
+        <button id='resetBtn'>Reset Card</button>
+        <button id='prevBtn'>&lt; Prev</button>
+        <button id='nextBtn'>Next &gt;</button>
+    </div>
+
+    <div id='card' class='card'>
+        <div id="count-red" class="counter counter-red">0</div>
+        <div id="count-green" class="counter counter-green">0</div>
+        
+        <div id='card-front' class='face front'></div>
+        <div id='card-back' class='face back'></div>
+    </div>
+
+    <script src='app.js'></script>
 </body>
 </html>
