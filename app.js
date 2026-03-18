@@ -7,60 +7,89 @@ const card = document.getElementById('card');
 const front = document.getElementById('card-front');
 const back = document.getElementById('card-back');
 const shuffleBtn = document.getElementById('shuffleBtn');
-const modeBtn = document.getElementById('modeBtn');
 const redDisplay = document.getElementById('count-red');
 const greenDisplay = document.getElementById('count-green');
+const fileInput = document.getElementById('fileInput');
+const progressBar = document.getElementById('progress-bar');
+const statsText = document.getElementById('stats-text');
 
-// --- PROGRESS PERSISTENCE ---
+const STORAGE_KEY = 'csslp_flashcard_stats';
+
+// --- SAVE / LOAD / STATS ---
 function saveProgress() {
     const stats = masterCards.map(c => ({ q: c.question, r: c.red || 0, g: c.green || 0 }));
-    localStorage.setItem('csslp_flashcard_stats', JSON.stringify(stats));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+    updateStats();
 }
 
-function loadProgress(data) {
-    const saved = localStorage.getItem('csslp_flashcard_stats');
-    if (!saved) return data.map(c => ({ ...c, red: 0, green: 0 }));
+function updateStats() {
+    // A card is "Mastered" if Green > Red AND Green is at least 1
+    const mastered = masterCards.filter(c => c.green > c.red).length;
+    const total = masterCards.length;
+    const percent = total > 0 ? Math.round((mastered / total) * 100) : 0;
     
-    const statsMap = JSON.parse(saved);
-    return data.map(c => {
-        const found = statsMap.find(s => s.q === c.question);
+    progressBar.style.width = `${percent}%`;
+    statsText.innerText = `Mastery: ${percent}% (${mastered}/${total} cards mastered)`;
+}
+
+function applyStatsToData(rawData, statsArray) {
+    return rawData.map(c => {
+        const found = statsArray.find(s => s.q === c.question);
         return found ? { ...c, red: found.r, green: found.g } : { ...c, red: 0, green: 0 };
     });
 }
 
-// --- CORE LOGIC ---
 async function loadCards() { 
     try {
         const res = await fetch('flashcards.json'); 
         const rawData = await res.json();
-        masterCards = loadProgress(rawData);
+        const saved = localStorage.getItem(STORAGE_KEY);
+        masterCards = saved ? applyStatsToData(rawData, JSON.parse(saved)) : rawData.map(c => ({...c, red:0, green:0}));
         cards = [...masterCards]; 
+        updateStats();
         render(); 
-    } catch (e) { console.error("Failed to load cards:", e); }
+    } catch (e) { console.error(e); }
 }
 
+// Export/Import (Same as before)
+document.getElementById('exportBtn').onclick = () => {
+    const dataStr = localStorage.getItem(STORAGE_KEY) || "[]";
+    const blob = new Blob([dataStr], { type: "application/json" });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `csslp_progress_${new Date().toISOString().slice(0,10)}.json`;
+    link.click();
+};
+
+document.getElementById('importBtn').onclick = () => fileInput.click();
+fileInput.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+        try {
+            localStorage.setItem(STORAGE_KEY, event.target.result);
+            location.reload();
+        } catch (err) { alert("Invalid file"); }
+    };
+    reader.readAsText(file);
+};
+
+// --- RENDER & LOGIC ---
 function render() { 
     if (cards.length === 0) return;
     const current = cards[idx];
     front.innerText = current.question; 
     back.innerText = current.answer; 
     card.classList.remove('flipped'); 
-    
-    // Update Counter UI
     redDisplay.innerText = current.red;
     greenDisplay.innerText = current.green;
-    
-    const seqClass = !shuffled ? "mode-active" : "mode-inactive";
-    const shufClass = shuffled ? "mode-active" : "mode-inactive";
-    shuffleBtn.innerHTML = `<span class="${seqClass}">Sequential</span> / <span class="${shufClass}">Shuffled</span>`;
+    shuffleBtn.innerHTML = shuffled ? "<b>Shuffled</b>" : "Sequential";
 }
 
-// WEIGHTED RANDOM: Cards with higher red/green ratio appear more often
 function getWeightedIndex() {
     let pool = [];
     masterCards.forEach((c, i) => {
-        // Calculation: (Red + 1) / (Green + 1). 
-        // We multiply by 5 to create enough "slots" in the random pool.
         const weight = Math.ceil(((c.red + 1) / (c.green + 1)) * 5);
         for (let s = 0; s < weight; s++) pool.push(i);
     });
@@ -68,66 +97,36 @@ function getWeightedIndex() {
 }
 
 const next = () => { 
-    if (shuffled) {
-        idx = getWeightedIndex();
-    } else {
-        idx = (idx + 1) % cards.length;
-    }
+    idx = shuffled ? getWeightedIndex() : (idx + 1) % cards.length;
     render(); 
 };
 
-const prev = () => { 
-    idx = (idx - 1 + cards.length) % cards.length; 
-    render(); 
-};
-
-// --- ACTIONS ---
-const handleSwipeLeft = () => { // Wrong / Hard
-    cards[idx].red++;
+const handleVote = (isRed) => {
+    const target = cards[idx];
+    isRed ? target.red++ : target.green++;
     saveProgress();
     render();
-    setTimeout(next, 200); 
+    setTimeout(next, 250);
 };
 
-const handleSwipeRight = () => { // Correct / Easy
-    cards[idx].green++;
-    saveProgress();
-    render();
-    setTimeout(next, 200);
-};
-
-// --- EVENT LISTENERS ---
-modeBtn.onclick = () => { document.body.classList.toggle('dark'); };
-
-shuffleBtn.onclick = () => { 
-    shuffled = !shuffled;
-    if (!shuffled) cards = [...masterCards]; 
-    render(); 
-};
-
+// --- BINDINGS ---
+document.getElementById('modeBtn').onclick = () => document.body.classList.toggle('dark');
+shuffleBtn.onclick = () => { shuffled = !shuffled; render(); };
 document.getElementById('resetBtn').onclick = () => {
-    cards[idx].red = 0;
-    cards[idx].green = 0;
-    saveProgress();
-    render();
+    cards[idx].red = 0; cards[idx].green = 0;
+    saveProgress(); render();
 };
-
-document.getElementById('prevBtn').onclick = prev;
+document.getElementById('prevBtn').onclick = () => { idx = (idx - 1 + cards.length) % cards.length; render(); };
 document.getElementById('nextBtn').onclick = next;
-card.onclick = () => { card.classList.toggle('flipped'); };
+card.onclick = () => card.classList.toggle('flipped');
+redDisplay.onclick = (e) => { e.stopPropagation(); handleVote(true); };
+greenDisplay.onclick = (e) => { e.stopPropagation(); handleVote(false); };
 
-// Clicking counters triggers swipe logic (Mouse support)
-redDisplay.onclick = (e) => { e.stopPropagation(); handleSwipeLeft(); };
-greenDisplay.onclick = (e) => { e.stopPropagation(); handleSwipeRight(); };
-
-// Gesture Control
 let startX = 0;
 card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive: true});
 card.addEventListener('touchend', e => { 
-    let endX = e.changedTouches[0].clientX; 
-    const diff = endX - startX;
-    if (diff > 60) handleSwipeRight();
-    if (diff < -60) handleSwipeLeft();
+    let diff = e.changedTouches[0].clientX - startX;
+    if (Math.abs(diff) > 60) handleVote(diff < 0);
 }, {passive: true});
 
 loadCards();
