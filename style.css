@@ -1,0 +1,7 @@
+
+body { margin:0; font-family:Arial; background:var(--bg); color:var(--fg); }
+:root { --bg:#ffffff; --fg:#000000; }
+.dark { --bg:#111111; --fg:#ffffff; }
+#topbar { display:flex; gap:10px; padding:10px; }
+#card { height:80vh; display:flex; justify-content:center; align-items:center; }
+#card-inner { width:90%; height:90%; background:var(--fg); color:var(--bg); border-radius:10px; display:flex; justify-content:center; align-items:center; padding:20px; text-align:center; }

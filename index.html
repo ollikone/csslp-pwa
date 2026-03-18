@@ -1,36 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSSLP Flashcards</title>
-
-  <!-- Correct manifest link -->
-  <link rel="manifest" href="manifest.json  margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: #f8f9fb;
-    }
-
-    header {
-      background: #003366;
-      color: white;
-      padding: 14px;
-      text-align: center;
-      font-size: 20px;
-    }
-
-    /* Container that hides overflow from the iframe */
-    #cardContainer {
-      position: fixed;
-      top: 60px;        /* same height as header */
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden; /* important: hides Quizlet’s bottom UI */
-      background: white;
-    }
-
-    /* Increase iframe height so Quizlet bottom box moves below the viewport */
-    iframe {
-      width: 100%;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSSLP Flashcards</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="topbar">
+<button id="modeBtn">Dark/Light</button>
+<button id="shuffleBtn">Shuffle</button>
+</div>
+<div id="card">
+<div id="card-inner">
+<div id="card-front"></div>
+<div id="card-back"></div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
