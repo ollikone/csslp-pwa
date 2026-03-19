@@ -1,11 +1,11 @@
 [
   {
-    "question": "Abuse (Misuse) Case",
-    "answer": "A reference to a use case from a hostile actor's perspective. Created from use cases and likely representing an interaction with the system in ways that the system was not designed to be used."
-  },
-  {
     "question": "Adequate Security",
     "answer": "Security commensurate with the risk and magnitude of harm resulting from the loss,  misuse, or unauthorized access to or modification of information. Source: OMB Circular A-130. This includes assuring that systems and applications operate effectively and provide the appropriate confidentiality, integrity and availability through cost-effective management, personnel, operational, and technical controls."
+  },
+  {
+    "question": "Abuse (Misuse) Case",
+    "answer": "A reference to a use case from a hostile actor's perspective. Created from use cases and likely representing an interaction with the system in ways that the system was not designed to be used."
   },
   {
     "question": "Adversarial Machine Learning (AML)",
@@ -101,119 +101,119 @@
   },
   {
     "question": "Common Vulnerabilities and Exposures (CVE)",
-    "answer": "Security vulnerabilities and exposures that  have been publicly disclosed."
+    "answer": "Security vulnerabilities and exposures that have been publicly disclosed."
   },
   {
     "question": "Common Vulnerability Scoring System (CVSS)",
-    "answer": "An open framework for evaluating the severity  and risk of software vulnerabilities."
+    "answer": "An open framework for evaluating the severity and risk of software vulnerabilities."
   },
   {
     "question": "Common Weakness Enumeration (CWE)",
-    "answer": "A community-developed list of software and hardware  weakness types, serving as common language, a measuring stick for security tools, and as a baseline for weakness  identification, mitigation, and prevention efforts. Source: cwe.mitre.org"
+    "answer": "A community-developed list of software and hardware weakness types, serving as common language, a measuring stick for security tools, and as a baseline for weakness identification, mitigation, and prevention efforts. Source: cwe.mitre.org"
   },
   {
     "question": "Compiler",
-    "answer": "A reference to the software used to convert/translate the program code (source code) into ma- chine-understandable format (i.e., object code)."
+    "answer": "A reference to the software used to convert/translate the program code (source code) into machine-understandable format (i.e., object code)."
   },
   {
     "question": "Concurrency",
-    "answer": "A reference to an environment where multiple execution paths within the same process can  exist at the same time. The objective is the ability to execute various parts of the program simultaneously and possibly  out of order and yet not affect the expected outcome."
+    "answer": "A reference to an environment where multiple execution paths within the same process can exist at the same time. The objective is the ability to execute various parts of the program simultaneously and possibly out of order and yet not affect the expected outcome."
   },
   {
     "question": "Configuration Item",
-    "answer": "An aggregation of information system components that is designated for configu- ration management and treated as a single entity in the configuration management process. Source: NIST SP 800-53,  Rev. 5"
+    "answer": "An aggregation of information system components that is designated for configuration management and treated as a single entity in the configuration management process. Source: NIST SP 800-53, Rev. 5"
   },
   {
     "question": "Configuration Management (CM)",
-    "answer": "A collection of activities focused on establishing and main- taining the integrity of information technology products and information systems, through control of processes  for initializing, changing, and monitoring the configurations of those products and systems throughout the system  development life cycle. Source: NIST SP 800-53, Rev. 5"
+    "answer": "A collection of activities focused on establishing and maintaining the integrity of information technology products and information systems, through control of processes for initializing, changing, and monitoring the configurations of those products and systems throughout the system development life cycle. Source: NIST SP 800-53, Rev. 5"
   },
   {
     "question": "Configuration Management (CM) Plan",
-    "answer": "A comprehensive description of the roles, responsibili- ties, policies, and procedures that apply when managing the configuration of products and systems."
+    "answer": "A comprehensive description of the roles, responsibilities, policies, and procedures that apply when managing the configuration of products and systems."
   },
   {
     "question": "Consensus Assessment Initiate Questionnaire (CAIQ)",
-    "answer": "A survey provided by the Cloud  Security Alliance for cloud consumers and auditors to assess the security capabilities of a Cloud Service Provider (CSP)."
+    "answer": "A survey provided by the Cloud Security Alliance for cloud consumers and auditors to assess the security capabilities of a Cloud Service Provider (CSP)."
   },
   {
     "question": "Containerization",
-    "answer": "A platform bundles all the resources and dependencies needed for an application to run  into a container."
+    "answer": "A platform bundles all the resources and dependencies needed for an application to run into a container."
   },
   {
     "question": "Continuity of Operations (COOP) Plan",
-    "answer": "A business continuity plan for the U.S. government. A  predetermined set of instructions and procedures that describe how government organizations' mission-essential  functions will be sustained within 12 hours and for up to 30 days before returning to normal operations after a disaster  event. Source: NIST SP 800-34, Rev. 1"
+    "answer": "A business continuity plan for the U.S. government. A predetermined set of instructions and procedures that describe how government organizations' mission-essential functions will be sustained within 12 hours and for up to 30 days before returning to normal operations after a disaster event. Source: NIST SP 800-34, Rev. 1"
   },
   {
     "question": "Continuous Monitoring Plan",
-    "answer": "Maintaining ongoing awareness to support organizational risk deci- sions. Source: NIST SP 800-137"
+    "answer": "Maintaining ongoing awareness to support organizational risk decisions. Source: NIST SP 800-137"
   },
   {
     "question": "Control Objectives for Information and Related Technologies (COBIT)",
-    "answer": "A frame- work providing guidance for the improvement of IT governance and information management that helps organizations  integrate industry standards, guidelines, and best practices to enterprise governance solutions. Source: isaca.org"
+    "answer": "A framework providing guidance for the improvement of IT governance and information management that helps organizations integrate industry standards, guidelines, and best practices to enterprise governance solutions. Source: isaca.org"
   },
   {
     "question": "Copyleft",
-    "answer": "A term used to describe a type of licensing arrangement for software and creative works that aims to  ensure the continued freedom of use, modification, and distribution with the condition that any derived materials have  the same conditions for use."
+    "answer": "A term used to describe a type of licensing arrangement for software and creative works that aims to ensure the continued freedom of use, modification, and distribution with the condition that any derived materials have the same conditions for use."
   },
   {
     "question": "Cryptographic Agility",
-    "answer": "A reference to the ability to evolve and adopt alternative cryptographic primitives  with ease. This capacity to swap out one cryptographic service provider for another is an important architectural  consideration during the design of cryptographic libraries/frameworks (e.g., when the original provider becomes  vulnerable or broken and must be replaced with an alternative)."
+    "answer": "A reference to the ability to evolve and adopt alternative cryptographic primitives with ease. This capacity to swap out one cryptographic service provider for another is an important architectural consideration during the design of cryptographic libraries/frameworks (e.g., when the original provider becomes vulnerable or broken and must be replaced with an alternative)."
   },
   {
     "question": "Cybersecurity Maturity Model Certification (CMMC)",
-    "answer": "A program developed by the U.S.  Department of Defense that is designed to enforce protection and sensitive unclassified information that is shared by  the department with its contractors and subcontractors. Source: U.S. Department of Defense, \"About CMC\""
+    "answer": "A program developed by the U.S. Department of Defense that is designed to enforce protection and sensitive unclassified information that is shared by the department with its contractors and subcontractors. Source: U.S. Department of Defense, \"About CMC\""
   },
   {
     "question": "Cybersecurity Supply-Chain Risk Management (C-SCRM)",
-    "answer": "A risk management strategy  that addresses cybersecurity risks that occur through the various stages of the supply chain arising from the use of  software and services."
+    "answer": "A risk management strategy that addresses cybersecurity risks that occur through the various stages of the supply chain arising from the use of software and services."
   },
   {
     "question": "Data Loss Prevention",
-    "answer": "A set of tools and processes used to ensure that sensitive data is not lost, misused,  or accessed by unauthorized users."
+    "answer": "A set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users."
   },
   {
     "question": "Denial of Service (DoS) Attack",
-    "answer": "A cyberattack where threat actors make machines and other network  resources unavailable to their intended users, usually by flooding targeted hosts/networks with illegitimate traffic  requests."
+    "answer": "A cyberattack where threat actors make machines and other network resources unavailable to their intended users, usually by flooding targeted hosts/networks with illegitimate traffic requests."
   },
   {
     "question": "DevSecOps",
-    "answer": "A development practice that integrates security initiatives at every stage of the software develop- ment life cycle to deliver robust and secure applications."
+    "answer": "A development practice that integrates security initiatives at every stage of the software development life cycle to deliver robust and secure applications."
   },
   {
     "question": "DevSecOps Maturity Model (DSOMM)",
-    "answer": "This model shows security measures which are applied  when using DevOps strategies and how these can be prioritized. With the help of DevOps strategies security can also be  enhanced. For example, each component such as application libraries and operating system libraries in docker images  can be tested for known vulnerabilities. Source: OWASP"
+    "answer": "This model shows security measures which are applied when using DevOps strategies and how these can be prioritized. With the help of DevOps strategies security can also be enhanced. For example, each component such as application libraries and operating system libraries in docker images can be tested for known vulnerabilities. Source: OWASP"
   },
   {
     "question": "Digital Certificate",
-    "answer": "A reference to a public-key certificate, as a component of the public-key infrastructure  (PKI), and some based on the X.509 standard. Fields include information that identifies the issuer, owner, owner's public  key, and validity, among other fields. Additional information could specify how the key is used and its period of validity  (cryptoperiod). They are issued by certificate authority (CA) to certify that the certificate content accurately represents  the certificate owner, including their public key."
+    "answer": "A reference to a public-key certificate, as a component of the public-key infrastructure (PKI), and some based on the X.509 standard. Fields include information that identifies the issuer, owner, owner's public key, and validity, among other fields. Additional information could specify how the key is used and its period of validity (cryptoperiod). They are issued by certificate authority (CA) to certify that the certificate content accurately represents the certificate owner, including their public key."
   },
   {
     "question": "Digital Signature",
-    "answer": "A cryptographic operation that, when implemented correctly, can provide message  authenticity, integrity and non-repudiation of the sender. This normally requires the use of a digital certificate."
+    "answer": "A cryptographic operation that, when implemented correctly, can provide message authenticity, integrity and non-repudiation of the sender. This normally requires the use of a digital certificate."
   },
   {
     "question": "Disaster Recovery (DR)",
-    "answer": "The activities necessary to restore IT and communications services to an  organization during and after an outage, disruption, or disturbance of any kind or scale."
+    "answer": "The activities necessary to restore IT and communications services to an organization during and after an outage, disruption, or disturbance of any kind or scale."
   },
   {
     "question": "Disaster Recovery Plan (DRP)",
-    "answer": "A documented, structured approach that describes how an organiza- tion can quickly resume operations after an unplanned incident. This plan is an essential part of a Business Continuity  Plan (BCP) and is applied to the aspects of an organization that depend on a functioning IT infrastructure. This plan aims  to help an organization resolve data loss and recover system functionality to perform in the aftermath of an incident,  even if it operates at a minimal level."
+    "answer": "A documented, structured approach that describes how an organization can quickly resume operations after an unplanned incident. This plan is an essential part of a Business Continuity Plan (BCP) and is applied to the aspects of an organization that depend on a functioning IT infrastructure. This plan aims to help an organization resolve data loss and recover system functionality to perform in the aftermath of an incident,  even if it operates at a minimal level."
   },
   {
     "question": "Distributed Denial of Service (DDoS)",
-    "answer": "A type of DoS attack that uses many sources of attack traffic,  often using botnets to carry out attacks."
+    "answer": "A type of DoS attack that uses many sources of attack traffic, often using botnets to carry out attacks."
   },
   {
     "question": "DREAD",
-    "answer": "A quantitative risk analysis methodology that rates, compares, and prioritizes a cyber threat's severity.  Each letter of the acronym represents a category. Also, the methodology uses a scaled rating system, with threats issued  with a rating between 0 and 10 for each category. The average of these category ratings indicates the threat's overall  severity."
+    "answer": "A quantitative risk analysis methodology that rates, compares, and prioritizes a cyber threat's severity. Categories are: Damage, Reproducibility, Exploitability, Affected users, Discoverability. Also, the methodology uses a scaled rating system, with threats issued  with a rating between 0 and 10 for each category. The average of these category ratings indicates the threat's overall severity."
   },
   {
     "question": "Dynamic Application Security Testing (DAST)",
-    "answer": "A process of testing an application or software  product in an operating state using tools that execute the software unit, application, or system under test, in ways that  attempt to make it reveal a potentially exploitable vulnerability."
+    "answer": "A process of testing an application or software product in an operating state using tools that execute the software unit, application, or system under test, in ways that attempt to make it reveal a potentially exploitable vulnerability."
   },
   {
     "question": "Economy of Mechanism",
-    "answer": "Demonstrates the principle that overly complex approaches will not neces- sarily enhance security as opposed to relatively straightforward and simple approaches."
+    "answer": "Demonstrates the principle that overly complex approaches will not necessarily enhance security as opposed to relatively straightforward and simple approaches."
   },
   {
     "question": "End-of-life (EOL)",
