@@ -217,11 +217,11 @@
   },
   {
     "question": "End-of-life (EOL)",
-    "answer": "The point at which vendors no longer support a software program or provide updates or  patches, making it vulnerable and increasing its potential to be targeted by bad actors."
+    "answer": "The point at which vendors no longer support a software program or provide updates or patches, making it vulnerable and increasing its potential to be targeted by bad actors."
   },
   {
     "question": "Failover",
-    "answer": "Switching to a redundant or standby computer server, system, hardware component, or network  upon the failure or abnormal termination of the previously active application, server, system, hardware component,  or network."
+    "answer": "Switching to a redundant or standby computer server, system, hardware component, or network upon the failure or abnormal termination of the previously active application, server, system, hardware component, or network."
   },
   {
     "question": "Fault Tolerance",
@@ -229,79 +229,79 @@
   },
   {
     "question": "Federal Information Processing Standards (FIPS)",
-    "answer": "A US standard for adoption and use  by federal departments and agencies that has been developed within the Information Technology Laboratory and  published by NIST. This standard addresses topics in information technology to achieve a common level of quality or  some level of interoperability."
+    "answer": "A US standard for adoption and use by federal departments and agencies that has been developed within the Information Technology Laboratory and published by NIST. This standard addresses topics in information technology to achieve a common level of quality or some level of interoperability."
   },
   {
     "question": "FISMA",
-    "answer": "Enacted in 2002, this act required each federal agency to develop, document, and implement an  agency-wide program to provide information security for the information and systems that support the operations and  assets of the agency, including those provided or managed by another agency, contractor, or other sources. The 2014  version of this act amends this by providing several modifications that modernize federal security practices to address  evolving security concerns."
+    "answer": "Enacted in 2002, this act required each federal agency to develop, document, and implement an agency-wide program to provide information security for the information and systems that support the operations and assets of the agency, including those provided or managed by another agency, contractor, or other sources. The 2014 version of this act amends this by providing several modifications that modernize federal security practices to address evolving security concerns."
   },
   {
     "question": "Functional testing",
-    "answer": "A type of software testing where each software function, or feature, is compared with  an organization's specifications to ensure the software provides the output that an end user or business requires."
+    "answer": "A type of software testing where each software function, or feature, is compared with an organization's specifications to ensure the software provides the output that an end user or business requires."
   },
   {
     "question": "Fuzz testing (software)",
-    "answer": "A form of dynamic testing used to uncover software defects or vulnerabilities  by subjecting interfaces to invalid or arbitrary input types. This is generally facilitated by automated testing tools and  techniques."
+    "answer": "A form of dynamic testing used to uncover software defects or vulnerabilities by subjecting interfaces to invalid or arbitrary input types. This is generally facilitated by automated testing tools and techniques."
   },
   {
     "question": "Governance",
-    "answer": "The process of establishing and maintaining a framework and supporting management struc- ture and processes to provide assurance that information security strategies are aligned with and support business  objectives, are consistent with applicable laws and regulations through adherence to policies and internal controls,  and provide assignment of responsibility, all in an effort to manage risk. Source: NIST SP 800-100"
+    "answer": "The process of establishing and maintaining a framework and supporting management structure and processes to provide assurance that information security strategies are aligned with and support business objectives, are consistent with applicable laws and regulations through adherence to policies and internal controls,  and provide assignment of responsibility, all in an effort to manage risk. Source: NIST SP 800-100"
   },
   {
     "question": "Gramm-Leach-Bliley Act (GLBA)",
-    "answer": "Also known as the Financial Modernization Act of 1999, this is a  federal law enacted in the United States to control the ways financial institutions deal with the private information of  individuals."
+    "answer": "Also known as the Financial Modernization Act of 1999, this is a federal law enacted in the United States to control the ways financial institutions deal with the private information of individuals."
   },
   {
     "question": "Gray-box testing",
-    "answer": "A test methodology that assumes some knowledge of the internal structure and imple- mentation detail of the assessment object. Also known as focused testing. Source: NIST SP 800-53A Rev 1"
+    "answer": "A test methodology that assumes some knowledge of the internal structure and implementation detail of the assessment object. Also known as focused testing. Source: NIST SP 800-53A Rev 1"
   },
   {
     "question": "Hardening",
-    "answer": "The process of applying secure configurations to reduce the attack surface and locking down var- ious software (e.g., operating systems, web servers, application servers, applications, etc.). This is normally performed  based on industry guidelines and benchmarks such as those provided by the Center for Internet Security (CIS)."
+    "answer": "The process of applying secure configurations to reduce the attack surface and locking down various software (e.g., operating systems, web servers, application servers, applications, etc.). This is normally performed based on industry guidelines and benchmarks such as those provided by the Center for Internet Security (CIS)."
   },
   {
     "question": "Hashing",
-    "answer": "The process of using a mathematical algorithm against data to produce a numeric value that is  representative of that data. A form of one-way encryption that uses a mathematical function to create a fixed-length  binary output from a variable-length binary input."
+    "answer": "The process of using a mathematical algorithm against data to produce a numeric value that is representative of that data. A form of one-way encryption that uses a mathematical function to create a fixed-length binary output from a variable-length binary input."
   },
   {
     "question": "Health Insurance Portability and Accountability Act (HIPAA)",
-    "answer": "A US Law that directs the  adoption of national standards for electronic health care transactions while protecting the privacy of individual's health  information. Other provisions address fraud reduction, protections for individuals with health insurance, and a wide  range of other healthcare-related activities. It was established in 1996."
+    "answer": "A US Law that directs the adoption of national standards for electronic health care transactions while protecting the privacy of individual's health information. Other provisions address fraud reduction, protections for individuals with health insurance, and a wide range of other healthcare-related activities. It was established in 1996."
   },
   {
     "question": "Heap",
-    "answer": "A reference to the area of memory used for dynamic allocation of space. Failure to deallocate memory  when it is no longer needed will result in memory leaks."
+    "answer": "A reference to the area of memory used for dynamic allocation of space. Failure to deallocate memory when it is no longer needed will result in memory leaks."
   },
   {
     "question": "High-Availability Clustering",
-    "answer": "A clustering method that uses multiple systems to reduce the risk  associated with a single point of failure."
+    "answer": "A clustering method that uses multiple systems to reduce the risk associated with a single point of failure."
   },
   {
     "question": "Hypervisor",
-    "answer": "The virtualization component that manages the guest Operating Systems (OS) on a host and  controls the flow of instructions between the guest OSs and the physical hardware. Source: NIST SP 800-125"
+    "answer": "The virtualization component that manages the guest Operating Systems (OS) on a host and controls the flow of instructions between the guest OSs and the physical hardware. Source: NIST SP 800-125"
   },
   {
     "question": "Incident Response (IR)",
-    "answer": "An organized, strategic approach to detecting and managing cyberattacks in  ways that minimize damage, recovery time, and total costs."
+    "answer": "An organized, strategic approach to detecting and managing cyberattacks in ways that minimize damage, recovery time, and total costs."
   },
   {
     "question": "Industrial Control System (ICS)",
-    "answer": "Computer-controlled systems that monitor and control industrial  processes in the physical world."
+    "answer": "Computer-controlled systems that monitor and control industrial processes in the physical world."
   },
   {
     "question": "Information Security",
-    "answer": "The protection of information and information systems from unauthorized access,  use, disclosure, disruption, modification, or destruction in order to provide confidentiality, integrity, and availability.  Source: 44 U.S.C. Sec 3542"
+    "answer": "The protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide confidentiality, integrity, and availability.  Source: 44 U.S.C. Sec 3542"
   },
   {
     "question": "Information Security Continuous Monitoring (ISCM)",
-    "answer": "Maintaining awareness of informa- tion security, vulnerabilities, and threats to support organizational risk management decisions at a frequency sufficient  to support risk-based security decisions to adequately protect organization information."
+    "answer": "Maintaining awareness of information security, vulnerabilities, and threats to support organizational risk management decisions at a frequency sufficient to support risk-based security decisions to adequately protect organization information."
   },
   {
     "question": "Injection Vulnerability",
-    "answer": "A reference to a flaw in software and a common application vulnerability that  would allow externally influenced (malicious) input to be used as part of the construction and subsequent execution  of a command. Variations include SQL injection (SQLi), OS command injection, and LDAP injection."
+    "answer": "A reference to a flaw in software and a common application vulnerability that would allow externally influenced (malicious) input to be used as part of the construction and subsequent execution of a command. Variations include SQL injection (SQLi), OS command injection, and LDAP injection."
   },
   {
     "question": "Institute of Electrical and Electronics Engineers (IEEE)",
-    "answer": "A professional organization that  sets standards for telecommunications, computer engineering, and similar disciplines."
+    "answer": "A professional organization that sets standards for telecommunications, computer engineering, and similar disciplines."
   },
   {
     "question": "Integrated Development Environment (IDE)",
