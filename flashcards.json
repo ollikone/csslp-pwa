@@ -305,55 +305,55 @@
   },
   {
     "question": "Integrated Development Environment (IDE)",
-    "answer": "A set of software applications, their control  procedures, supporting databases, libraries, and toolsets which provide a programmer or a team of programmers  what they need to specify designs, translate designs into source code, and then compile, test, and integrate that code  into a finished software product. Many support multiple programming languages and facilitate their use on the same  project."
+    "answer": "A set of software applications, their control procedures, supporting databases, libraries, and toolsets which provide a programmer or a team of programmers what they need to specify designs, translate designs into source code, and then compile, test, and integrate that code into a finished software product. Many support multiple programming languages and facilitate their use on the same project."
   },
   {
     "question": "Intellectual Property (IP)",
-    "answer": "Creations of the mind such as musical, literary, and artistic works; inventions;  and symbols, names, images, and designs used in commerce, including copyrights, trademarks, patents, and related  rights. Holders of one of these abstract \"properties\" have certain exclusive rights to their creative work, commercial  symbol, or invention."
+    "answer": "Creations of the mind such as musical, literary, and artistic works; inventions; and symbols, names, images, and designs used in commerce, including copyrights, trademarks, patents, and related rights. Holders of one of these abstract \"properties\" have certain exclusive rights to their creative work, commercial symbol, or invention."
   },
   {
     "question": "Interactive AST (IAST)",
-    "answer": "A methodology that analyzes a web application's behavior during runtime to  identify security vulnerabilities. It combines aspects of both SAST and DAST methodologies, offering comprehensive  security testing from within the application."
+    "answer": "A methodology that analyzes a web application's behavior during runtime to identify security vulnerabilities. It combines aspects of both SAST and DAST methodologies, offering comprehensive security testing from within the application."
   },
   {
     "question": "International Organization of Standards (ISO)",
-    "answer": "This body develops voluntary internation- al standards in collaboration with its partners in international standardization, the International Electro-technical  Commission (IEC) and the International Telecommunication Union (ITU), particularly in the field of information and  communication technologies."
+    "answer": "This body develops voluntary international standards in collaboration with its partners in international standardization, the International Electrotechnical Commission (IEC) and the International Telecommunication Union (ITU), particularly in the field of information and communication technologies."
   },
   {
     "question": "Internet Engineering Task Force (IETF)",
-    "answer": "The internet standards organization, made up of network  designers, operators, vendors and researchers, that defines protocol standards (e.g., IP, TCP, DNS) through a process  of collaboration and consensus. Source: NIST SP 1800-16B"
+    "answer": "The internet standards organization, made up of network designers, operators, vendors and researchers, that defines protocol standards (e.g., IP, TCP, DNS) through a process of collaboration and consensus. Source: NIST SP 1800-16B"
   },
   {
     "question": "Internet of Things (IoT)",
-    "answer": "A network of interrelated devices that connect and exchange data with other  devices and the cloud. These devices are typically embedded with technology such as sensors and software and can  include mechanical and digital machines and consumer objects."
+    "answer": "A network of interrelated devices that connect and exchange data with other devices and the cloud. These devices are typically embedded with technology such as sensors and software and can include mechanical and digital machines and consumer objects."
   },
   {
     "question": "Interoperability testing",
-    "answer": "A type of software testing performed to examine a software's interaction either  with its components or other software, checking the functional relationship between two software systems as per  requirements of end users."
+    "answer": "A type of software testing performed to examine a software's interaction either with its components or other software, checking the functional relationship between two software systems as per requirements of end users."
   },
   {
     "question": "Jurisdiction",
-    "answer": "The practical authority granted to a legal body to administer justice within a defined area of  responsibility."
+    "answer": "The practical authority granted to a legal body to administer justice within a defined area of responsibility."
   },
   {
     "question": "Key Performance Indicator (KPI)",
-    "answer": "Metric that provides meaningful insight and can be used for  decision making."
+    "answer": "Metric that provides meaningful insight and can be used for decision making."
   },
   {
     "question": "Key Risk Indicator (KRI)",
-    "answer": "Critical predictors/indicators of undesirable events that can adversely impact  an organization. The kind of metrics which are forward looking and contribute to the early warning sign that facilitates  enterprise to report risks, prevent calamity, and remediate them promptly."
+    "answer": "Critical predictors/indicators of undesirable events that can adversely impact an organization. The kind of metrics which are forward looking and contribute to the early warning sign that facilitates enterprise to report risks, prevent calamity, and remediate them promptly."
   },
   {
     "question": "Least Privilege",
-    "answer": "The principle that a security architecture is designed so that each entity is granted the  minimum system authorizations and resources that the entity needs to perform its function. Source: NIST SP 800-171  Rev. 2"
+    "answer": "The principle that a security architecture is designed so that each entity is granted the minimum system authorizations and resources that the entity needs to perform its function. Source: NIST SP 800-171 Rev. 2"
   },
   {
     "question": "Life Cycle",
-    "answer": "Evolution of a system, product, service, project or other human-made entity from conception  through retirement."
+    "answer": "Evolution of a system, product, service, project or other human-made entity from conception through retirement."
   },
   {
     "question": "Linker",
-    "answer": "Software used to combine compiled object files (e.g., yours and those of the third-party libraries) into  one executable program. Static linking and dynamic linking are both common."
+    "answer": "Software used to combine compiled object files (e.g., yours and those of the third-party libraries) into one executable program. Static linking and dynamic linking are both common."
   },
   {
     "question": "Log",
@@ -361,79 +361,79 @@
   },
   {
     "question": "Machine Learning (ML)",
-    "answer": "A type of artificial intelligence (AI) that enables machines to imitate human  behavior. Using AI algorithms, systems learn from data and past experiences to predict future outcomes. As the number  of data samples increases, so does performance. In cybersecurity, this subset of AI is used to detect and respond to  potential attacks faster."
+    "answer": "A type of artificial intelligence (AI) that enables machines to imitate human behavior. Using AI algorithms, systems learn from data and past experiences to predict future outcomes. As the number of data samples increases, so does performance. In cybersecurity, this subset of AI is used to detect and respond to potential attacks faster."
   },
   {
     "question": "Maximum Tolerable Downtime (MTD)",
-    "answer": "The longest period that a system, application, or process  can be unavailable or non-functional without causing significant harm to an organization. Beyond this period, the  downtime would start to have severe consequences, such as financial losses, reputational damage, regulatory penalties,  or operational disruptions."
+    "answer": "The longest period that a system, application, or process can be unavailable or non-functional without causing significant harm to an organization. Beyond this period, the downtime would start to have severe consequences, such as financial losses, reputational damage, regulatory penalties, or operational disruptions."
   },
   {
     "question": "Modular Open Systems Approach (MOSA)",
-    "answer": "A technical and business strategy for designing  adaptable systems including software. MOSA requires that major interface points within systems are modular and  embrace widely supported standards."
+    "answer": "A technical and business strategy for designing adaptable systems including software. MOSA requires that major interface points within systems are modular and embrace widely supported standards."
   },
   {
     "question": "Multi-factor Authentication (MFA)",
-    "answer": "A security method that requires users to verify their identity  using multiple pieces of evidence, or \"factors,\" before they can access a system or service. This strengthens security by  adding layers beyond just a password, making it harder for unauthorized users to gain access."
+    "answer": "A security method that requires users to verify their identity using multiple pieces of evidence, or \"factors,\" before they can access a system or service. This strengthens security by adding layers beyond just a password, making it harder for unauthorized users to gain access."
   },
   {
     "question": "National Institute of Standards and Technology (NIST)",
-    "answer": "A nonregulatory government  agency that promotes and maintains standards and metrics for technology, science, and other industries in the United  States. Source: Morphisec's Ultimate List of Cybersecurity Terms"
+    "answer": "A nonregulatory government agency that promotes and maintains standards and metrics for technology, science, and other industries in the United States. Source: Morphisec's Ultimate List of Cybersecurity Terms"
   },
   {
     "question": "National Vulnerability Database (NVD)",
-    "answer": "The U.S. government repository of standards-based  vulnerability management data, enabling automation of vulnerability management, security measurement, and com- pliance (e.g., Federal Information Security Modernization Act). Source: CNSSI 4009-2015"
+    "answer": "The U.S. government repository of standards-based vulnerability management data, enabling automation of vulnerability management, security measurement, and compliance (e.g., Federal Information Security Modernization Act). Source: CNSSI 4009-2015"
   },
   {
     "question": "Need-to-Know",
-    "answer": "Primarily associated with organizations that assign clearance levels to all users and classifi- cation levels to all assets; restricts users with the same clearance level from sharing information unless they are working  on the same effort. Entails compartmentalization."
+    "answer": "Primarily associated with organizations that assign clearance levels to all users and classification levels to all assets; restricts users with the same clearance level from sharing information unless they are working  on the same effort. Entails compartmentalization."
   },
   {
     "question": "Network-Attached Storage (NAS)",
-    "answer": "A file-level computer data storage server connected to a com- puter network providing data access to a heterogeneous group of clients."
+    "answer": "A file-level computer data storage server connected to a computer network providing data access to a heterogeneous group of clients."
   },
   {
     "question": "Nonfunctional testing",
-    "answer": "A type of software testing that remains focused on validating the nonfunctional  aspects of the software, including its performance, usability, scalability, recoverability, and security."
+    "answer": "A type of software testing that remains focused on validating the nonfunctional aspects of the software, including its performance, usability, scalability, recoverability, and security."
   },
   {
     "question": "Non-repudiation",
-    "answer": "A security concept that ensures that an entity (person, system, or organization) cannot  deny the authenticity of their actions or commitments. In the context of information systems, it guarantees that once a  transaction, communication, or data exchange occurs, the parties involved cannot later claim that it did not happen or  that they did not participate in it."
+    "answer": "A security concept that ensures that an entity (person, system, or organization) cannot deny the authenticity of their actions or commitments. In the context of information systems, it guarantees that once a transaction, communication, or data exchange occurs, the parties involved cannot later claim that it did not happen or that they did not participate in it."
   },
   {
     "question": "Obfuscation",
-    "answer": "The deliberate act of obscuring code in various forms (e.g., source code, bytecode, object  code). The objective is to either make the code difficult for humans to understand or to protect against decompiling  and reverse-engineering."
+    "answer": "The deliberate act of obscuring code in various forms (e.g., source code, bytecode, object code). The objective is to either make the code difficult for humans to understand or to protect against decompiling and reverse-engineering."
   },
   {
     "question": "Object",
-    "answer": "Passive information system-related entity (e.g., devices, files, records, tables, processes, programs,  domains) containing or receiving information. Access by a subject implies access to the information it contains."
+    "answer": "Passive information system-related entity (e.g., devices, files, records, tables, processes, programs, domains) containing or receiving information. Access by a subject implies access to the information it contains."
   },
   {
     "question": "Open Vulnerability and Assessment Language (OVAL)",
-    "answer": "A language for representing  system configuration information, assessing machine state, and reporting assessment results."
+    "answer": "A language for representing system configuration information, assessing machine state, and reporting assessment results."
   },
   {
     "question": "Open Web Application Security Project (OWASP)",
-    "answer": "A nonprofit organization committed to  improving the security of software and protecting web applications from cyber threats. As an online community, it offers  free and open resources, such as articles and documentation, methodologies, and tools and technologies to facilitate  web application security."
+    "answer": "A nonprofit organization committed to improving the security of software and protecting web applications from cyber threats. As an online community, it offers free and open resources, such as articles and documentation, methodologies, and tools and technologies to facilitate web application security."
   },
   {
     "question": "Open-Source Software",
-    "answer": "Software whose source code and other design information is made publicly  available for inspection, testing, assessment, and use. In many cases, licenses allow modification and refactoring."
+    "answer": "Software whose source code and other design information is made publicly available for inspection, testing, assessment, and use. In many cases, licenses allow modification and refactoring."
   },
   {
     "question": "Password Entropy",
-    "answer": "A way to describe the complexity of a password mathematically. It determines how  difficult guessing a password can be by calculating a 50-percent chance of guessing a password based on password  length and possible characters."
+    "answer": "A way to describe the complexity of a password mathematically. It determines how difficult guessing a password can be by calculating a 50-percent chance of guessing a password based on password length and possible characters."
   },
   {
     "question": "Payment Card Industry Data Security Standard (PCI DSS)",
-    "answer": "An information security  standard administered by the Payment Card Industry Security Standards Council that applies to merchants and service  providers who process credit or debit card transactions. It sets the minimum data security requirements for all  merchants handling, processing, or storing cardholder data."
+    "answer": "An information security standard administered by the Payment Card Industry Security Standards Council that applies to merchants and service providers who process credit or debit card transactions. It sets the minimum data security requirements for all merchants handling, processing, or storing cardholder data."
   },
   {
     "question": "Penetration testing",
-    "answer": "A test methodology in which assessors, typically working under specific constraints,  attempt to circumvent or defeat the security features of an information system."
+    "answer": "A test methodology in which assessors, typically working under specific constraints, attempt to circumvent or defeat the security features of an information system."
   },
   {
     "question": "Privacy Impact Assessment (PIA)",
-    "answer": "An analysis of how information is handled to ensure handling  conforms to applicable legal, regulatory, and policy requirements regarding privacy; to determine the risks and effects of"
+    "answer": "An analysis of how information is handled to ensure handling conforms to applicable legal, regulatory, and policy requirements regarding privacy; to determine the risks and effects of creating, collecting, using, processing, storing, maintaining, disseminating, disclosing, and disposing of information in identifiable form in an electronic information system; and to examine and evaluate protections and alternate processes for handling information to mitigate potential privacy concerns."
   },
   {
     "question": "Provenance",
@@ -441,11 +441,11 @@
   },
   {
     "question": "Pseudorandom number generator",
-    "answer": "A deterministic computational process that has one or more  inputs called \"seeds\" which put out a sequence of values that appears to be random according to specified statistical  tests."
+    "answer": "A deterministic computational process that has one or more inputs called \"seeds\" which put out a sequence of values that appears to be random according to specified statistical tests."
   },
   {
     "question": "Recovery Point Objective (RPO)",
-    "answer": "A measure of how much data the organization can lose before  the organization is no longer viable."
+    "answer": "A measure of how much data the organization can lose before the organization is no longer viable."
   },
   {
     "question": "Recovery Time Objective (RTO)",
@@ -453,15 +453,15 @@
   },
   {
     "question": "Redundancy",
-    "answer": "Continuing the running of an organization even with the absence/failure of one important  component."
+    "answer": "Continuing the running of an organization even with the absence/failure of one important component."
   },
   {
     "question": "Redundant Array of Independent Disks (RAID)",
-    "answer": "A data storage virtualization technology  that combines multiple physical disk-drive components into a single logical unit for the purposes of data redundancy,  performance improvement, or both."
+    "answer": "A data storage virtualization technology that combines multiple physical disk-drive components into a single logical unit for the purposes of data redundancy, performance improvement, or both."
   },
   {
     "question": "Regression testing",
-    "answer": "A type of testing in the software development life cycle that runs after every change  to ensure that the change introduces no unintended breaks. This testing addresses a common issue that developers  face\u2014the emergence of old bugs with the introduction of new changes."
+    "answer": "A type of testing in the software development life cycle that runs after every change to ensure that the change introduces no unintended breaks. This testing addresses a common issue that developers face; the emergence of old bugs with the introduction of new changes."
   },
   {
     "question": "Replication",
@@ -469,19 +469,19 @@
   },
   {
     "question": "Residual risk",
-    "answer": "The portion of risk remaining after security measures have been applied. Source: NIST SP  800-33"
+    "answer": "The portion of risk remaining after security measures have been applied. Source: NIST SP 800-33"
   },
   {
     "question": "Resilience",
-    "answer": "The ability to quickly adapt and recover from changes to the environment through holistic  implementation of risk management, contingency, and continuity planning."
+    "answer": "The ability to quickly adapt and recover from changes to the environment through holistic implementation of risk management, contingency, and continuity planning."
   },
   {
     "question": "Risk",
-    "answer": "A measure of the extent to which an entity is threatened by a potential circumstance or event. It is typically  a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of  occurrence. Source: FIPS PUB 200; NIST SP 800-37, Rev. 1"
+    "answer": "A measure of the extent to which an entity is threatened by a potential circumstance or event. It is typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence. Source: FIPS PUB 200; NIST SP 800-37, Rev. 1"
   },
   {
     "question": "Risk Acceptance",
-    "answer": "A risk management strategy that determines whether the potential benefits of a business  function outweigh the possible risk impact/likelihood and accepts the risk to perform that business function."
+    "answer": "A risk management strategy that determines whether the potential benefits of a business function outweigh the possible risk impact/likelihood and accepts the risk to perform that business function."
   },
   {
     "question": "Risk Assessment",
