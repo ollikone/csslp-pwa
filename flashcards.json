@@ -80,6 +80,10 @@
     "answer": "1. A committee of stakeholders comprised of management and security leadership that reviews the change process and specific proposed changes that affect enterprise operations. It makes final and binding decisions on implementing changes. 2. A group of qualified people responsible for the process of regulating and approving changes to hardware, firmware, software, and documentation throughout the development and operational life cycle of an information system."
   },
   {
+    "question": "CIA triad",
+    "answer": "(Confidentiality, Integrity, and Availability) is a foundational cybersecurity model designed to guide policies for protecting information. It ensures data is kept private (Confidentiality), accurate (Integrity), and accessible when needed (Availability)."
+  },
+  {
     "question": "Cloud Controls Matrix (CCM)",
     "answer": "A tool for the systematic assessment of a cloud implementation that provides guidance on which security controls should be implemented by which actor within the cloud supply chain."
   },
@@ -485,238 +489,234 @@
   },
   {
     "question": "Risk Assessment",
-    "answer": "The process of identifying and analyzing risks to organizational operations and assets,  individuals, and other entities. The analysis is performed as a part of risk management incorporates threat and  vulnerability analyses and considers mitigations provided by security controls planned or in place."
+    "answer": "The process of identifying and analyzing risks to organizational operations and assets, individuals, and other entities. The analysis is performed as a part of risk management incorporates threat and vulnerability analyses and considers mitigations provided by security controls planned or in place."
   },
   {
     "question": "Risk Avoidance",
-    "answer": "The elimination of hazards, activities and exposures that can negatively affect an organi- zation and its assets."
+    "answer": "The elimination of hazards, activities and exposures that can negatively affect an organization and its assets."
   },
   {
     "question": "Risk Management",
-    "answer": "The process of identifying, evaluating, and controlling threats, including all the  phases of risk context (or frame), risk assessment, risk treatment, and risk monitoring."
+    "answer": "The process of identifying, evaluating, and controlling threats, including all the phases of risk context (or frame), risk assessment, risk treatment, and risk monitoring."
   },
   {
     "question": "Risk Management Framework (RMF)",
-    "answer": "A structured approach used to oversee and manage risk  for an enterprise. Source: CNSSI 4009"
+    "answer": "A structured approach used to oversee and manage risk for an enterprise. Source: CNSSI 4009"
   },
   {
     "question": "Risk Mitigation",
-    "answer": "Prioritizing, evaluating, and implementing the appropriate risk-reducing controls/coun- termeasures recommended from the risk management process."
+    "answer": "Prioritizing, evaluating, and implementing the appropriate risk-reducing controls/countermeasures recommended from the risk management process."
   },
   {
     "question": "Risk Monitoring",
-    "answer": "A process for maintaining ongoing awareness of an organization's risk environment, risk  management program, and associated activities to support risk decisions."
+    "answer": "A process for maintaining ongoing awareness of an organization's risk environment, risk management program, and associated activities to support risk decisions."
   },
   {
     "question": "Risk Response",
-    "answer": "Accepting, avoiding, mitigating, sharing, or transferring risk to organizational operations  (i.e., mission, functions, image, or reputation), organizational assets, individuals or third parties. Source: NIST SP 800-39"
+    "answer": "Accepting, avoiding, mitigating, sharing, or transferring risk to organizational operations (i.e., mission, functions, image, or reputation), organizational assets, individuals or third parties. Source: NIST SP 800-39"
   },
   {
     "question": "Risk Transference (Sharing)",
-    "answer": "When exposure to a risk is transferred to a third party, usually as part  of a financial transaction. Purchasing insurance is the most common method, though others exist."
+    "answer": "When exposure to a risk is transferred to a third party, usually as part of a financial transaction. Purchasing insurance is the most common method, though others exist."
   },
   {
     "question": "Rotation of Duties",
-    "answer": "The periodical rotation of employees in critical or financial roles to prevent nefarious  activities from taking place across time without collusion."
+    "answer": "The periodical rotation of employees in critical or financial roles to prevent nefarious (wicked/criminal) activities from taking place across time without collusion (secret cooperation)."
   },
   {
     "question": "Sanitize",
-    "answer": "A process to render access to target data on the media infeasible for a given level of effort. Examples  include clearing, purging, damaging, and destroying media. Source: NIST SP 800-88, Rev. 1"
+    "answer": "A process to render access to target data on the media infeasible for a given level of effort. Examples include clearing, purging, damaging, and destroying media. Source: NIST SP 800-88, Rev. 1"
   },
   {
     "question": "SCRUM",
-    "answer": "A framework to facilitate a team's development process through collaboration and by breaking  down the work into increments, allowing for experimentation and feedback that informs continuous learning and  improvement."
+    "answer": "A framework to facilitate a team's development process through collaboration and by breaking down the work into increments, allowing for experimentation and feedback that informs continuous learning and improvement."
   },
   {
     "question": "Security Content Automation Protocol (SCAP)",
-    "answer": "A suite of specifications that standardize the  format and nomenclature by which software flaw and security configuration information is communicated, both to  machines and humans. Source: NIST SP 800-126"
+    "answer": "A suite of specifications that standardize the format and nomenclature by which software flaw and security configuration information is communicated, both to machines and humans. Source: NIST SP 800-126"
   },
   {
     "question": "Security Controls",
-    "answer": "The management, operational, and technical controls (i.e., safeguards or countermea- sures) prescribed for an information system to protect the confidentiality, integrity, and availability of the system and  its information."
+    "answer": "The management, operational, and technical controls (i.e., safeguards or countermeasures) prescribed for an information system to protect the confidentiality, integrity, and availability of the system and its information."
   },
   {
     "question": "Security Technical Implementation Guide (STIG)",
-    "answer": "Based on Department of Defense (DoD)  policy and security controls, an implementation guide geared to a specific product and version. Contains all require- ments that have been flagged as applicable for the product that have been selected on a DoD baseline."
+    "answer": "Based on Department of Defense (DoD) policy and security controls, an implementation guide geared to a specific product and version. Contains all requirements that have been flagged as applicable for the product that have been selected on a DoD baseline."
   },
   {
     "question": "Separation of Duties",
-    "answer": "The practice of ensuring that no critical process can be completed by a single  person."
+    "answer": "The practice of ensuring that no critical process can be completed by a single person."
   },
   {
     "question": "Service-Level Agreement (SLA)",
-    "answer": "A contract that exists between customers and their service provider  or between service providers. It records the common understanding about services, priorities, responsibilities, guar- antees, warranties to be provided \u2014 collectively, the level of service."
+    "answer": "A contract that exists between customers and their service provider or between service providers. It records the common understanding about services, priorities, responsibilities, guarantees, warranties to be provided collectively, the level of service."
   },
   {
     "question": "Service-Level Indicator",
-    "answer": "A quantitative means to determine whether the supplier is compliant with the  SLA commitments."
+    "answer": "A quantitative means to determine whether the supplier is compliant with the SLA commitments."
   },
   {
     "question": "Service-Level Objective",
-    "answer": "A measurable goal for a service's performance over a set period of time. The  level of service can also be specified as \"target\" and \"minimum,\" which informs customers about what to expect (the  minimum), while providing a measurable (average) target value that shows the level of organization performance."
+    "answer": "A measurable goal for a service's performance over a set period of time. The level of service can also be specified as \"target\" and \"minimum,\" which informs customers about what to expect (the minimum), while providing a measurable (average) target value that shows the level of organization performance."
   },
   {
     "question": "Single Sign-On (SSO)",
-    "answer": "An authentication mechanism that allows a single identity to be shared across  multiple applications."
+    "answer": "An authentication mechanism that allows a single identity to be shared across multiple applications."
   },
   {
     "question": "Software Assurance",
-    "answer": "The level of confidence that software is free from defects either intentionally  designed into the software or accidentally inserted at any time during its life cycle and that it functions in the intended  manner."
+    "answer": "The level of confidence that software is free from defects either intentionally designed into the software or accidentally inserted at any time during its life cycle and that it functions in the intended manner."
   },
   {
     "question": "Software Assurance Maturity Model (SAMM/OpenSAMM)",
-    "answer": "A framework developed by  OWASP to ensure that development projects include security features and practices in the software development life  cycle."
+    "answer": "A framework developed by OWASP to ensure that development projects include security features and practices in the software development life cycle."
   },
   {
     "question": "Software Bill of Materials (SBOM)",
-    "answer": "A formal record containing the details and supply chain  relationships of various components used in building software. Source: EO 14028 Section 10(j)"
+    "answer": "A formal record containing the details and supply chain relationships of various components used in building software. Source: EO 14028 Section 10(j)"
   },
   {
     "question": "Software Composition Analysis (SCA)",
-    "answer": "An automated process that identifies the open-source  software and third-party components in a codebase, as well as their relative vulnerabilities and compliance issues."
+    "answer": "An automated process that identifies the open-source software and third-party components in a codebase, as well as their relative vulnerabilities and compliance issues."
   },
   {
     "question": "Software Development Life Cycle (SDLC)",
-    "answer": "A framework and a systematic process with associ- ated tasks that are performed in a series of steps for building, deploying, and supporting software applications. The life  cycle begins with planning and requirements gathering and ends with decommissioning and sunsetting the software."
+    "answer": "A framework and a systematic process with associated tasks that are performed in a series of steps for building, deploying, and supporting software applications. The lifecycle begins with planning and requirements gathering and ends with decommissioning and sunsetting the software."
   },
   {
     "question": "Software Security Constraints",
-    "answer": "In system engineering: a restriction, limit, or regulation imposed on  a product, project, or process. Source: ANSI/EIA 1998"
+    "answer": "In system engineering: a restriction, limit, or regulation imposed on a product, project, or process. Source: ANSI/EIA 1998"
   },
   {
     "question": "Software Security Properties",
-    "answer": "In system engineering: system quality and software quality require- ments. Source: ISO/IEC 25000"
+    "answer": "In system engineering: system quality and software quality requirements. Source: ISO/IEC 25000"
   },
   {
     "question": "Stack",
-    "answer": "A reference to an area of memory that is used for static allocation of space for program variables and  used during function calls."
+    "answer": "A reference to an area of memory that is used for static allocation of space for program variables and used during function calls."
   },
   {
     "question": "Static Application Security Testing (SAST)",
-    "answer": "Detects application vulnerabilities by scanning the  source code, byte code, or binaries of an application. Also known as white-box testing."
+    "answer": "Detects application vulnerabilities by scanning the source code, byte code, or binaries of an application. Also known as white-box testing."
   },
   {
     "question": "Storage Area Network (SAN)",
-    "answer": "A network that provides access to consolidated, block-level data  storage. These networks are generally used to enhance storage devices, such as disk arrays, optical jukeboxes, and tape  libraries accessible to servers so that the devices are interpreted by the operating system as locally attached devices."
+    "answer": "A network that provides access to consolidated, block-level data storage. These networks are generally used to enhance storage devices, such as disk arrays, optical jukeboxes, and tape libraries accessible to servers so that the devices are interpreted by the operating system as locally attached devices."
   },
   {
     "question": "Stress testing",
-    "answer": "Type of software testing that remains focused on verifying the stability and reliability of the  software under stress conditions (beyond the normal limits of operation). Stress may be expressed in terms of excessive  loads/volumes or even unexpected anomalies at run time (e.g., loss of connection to the network or to the database)."
+    "answer": "Type of software testing that remains focused on verifying the stability and reliability of the software under stress conditions (beyond the normal limits of operation). Stress may be expressed in terms of excessive loads/volumes or even unexpected anomalies at run time (e.g., loss of connection to the network or to the database)."
   },
   {
     "question": "STRIDE",
-    "answer": "A threat modeling and categorization methodology that classifies known threats according to the kinds  of exploits that are used (or motivation of the attacker)."
+    "answer": "A threat modeling and categorization methodology that classifies known threats according to the kinds of exploits that are used (or motivation of the attacker). Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege."
   },
   {
     "question": "Subject",
-    "answer": "Generally, an individual, process, or device causing information to flow among objects or change to  the system state. Source: NIST SP 800-53, Rev. 5"
+    "answer": "Generally, an individual, process, or device causing information to flow among objects or change to the system state. Source: NIST SP 800-53, Rev. 5"
   },
   {
     "question": "Supervisory Control and Data Acquisition (SCADA) System",
-    "answer": "A category of industrial  control systems (ICS) that remotely gather data in real-time from industrial processes to supervise and control  equipment and conditions, enabling organizations to control and monitor their industrial devices and make data-driven  decisions regarding their industrial processes."
+    "answer": "A category of industrial control systems (ICS) that remotely gather data in real-time from industrial processes to supervise and control equipment and conditions, enabling organizations to control and monitor their industrial devices and make data-driven decisions regarding their industrial processes."
   },
   {
     "question": "Survivability",
-    "answer": "The ability of a system to minimize the impact of a finite duration disturbance on value delivery  (i.e., stakeholder benefit at cost), achieved through the reduction of the likelihood or magnitude of a disturbance; the  satisfaction of a minimally acceptable level of value delivery during and after a disturbance; and/or a timely recovery."
+    "answer": "The ability of a system to minimize the impact of a finite duration disturbance on value delivery (i.e., stakeholder benefit at cost), achieved through the reduction of the likelihood or magnitude of a disturbance; the satisfaction of a minimally acceptable level of value delivery during and after a disturbance; and/or a timely recovery."
   },
   {
     "question": "Synthetic monitoring",
-    "answer": "A monitoring tool/technology that relies on scripting capabilities and consistent  sets of transactions to assess performance and availability and aims to minimize the time to detect and mitigate  production issues."
+    "answer": "A monitoring tool/technology that relies on scripting capabilities and consistent sets of transactions to assess performance and availability and aims to minimize the time to detect and mitigate production issues."
   },
   {
     "question": "System Security Plan (SSP)",
-    "answer": "Formal document that provides an overview of the security requirements  for an information system and describes the security controls in place or planned for meeting those requirements."
+    "answer": "Formal document that provides an overview of the security requirements for an information system and describes the security controls in place or planned for meeting those requirements."
   },
   {
     "question": "Technical Debt",
-    "answer": "The consequences of software development actions that intentionally or unintentionally  prioritize client value and/or project constraints such as delivery deadlines, over more technical implementation, and  design considerations."
+    "answer": "The consequences of software development actions that intentionally or unintentionally prioritize client value and/or project constraints such as delivery deadlines, over more technical implementation, and design considerations."
   },
   {
     "question": "Test case",
-    "answer": "A reference to a procedure that is created and executed by software developers/testers to  determine whether the software under the test meets the specified requirement."
+    "answer": "A reference to a procedure that is created and executed by software developers/testers to determine whether the software under the test meets the specified requirement."
   },
   {
     "question": "Test strategy",
-    "answer": "A reference to a high-level document that describes an organization's overall approach to  testing the software."
+    "answer": "A reference to a high-level document that describes an organization's overall approach to testing the software."
   },
   {
     "question": "Testing",
-    "answer": "The process of exercising one or more assessment objects (e.g., activities or mechanisms) under  specified conditions to compare actual with expected behavior."
+    "answer": "The process of exercising one or more assessment objects (e.g., activities or mechanisms) under specified conditions to compare actual with expected behavior."
   },
   {
     "question": "Third-Party Components",
-    "answer": "A reusable system or software component developed to be distributed by  a supplier for integration into an acquisitor system."
+    "answer": "A reusable system or software component developed to be distributed by a supplier for integration into an acquisitor system."
   },
   {
     "question": "Threat Intelligence",
-    "answer": "Threat information that has been aggregated, transformed, analyzed, interpreted,  or enriched to provide the necessary context for decision-making processes."
+    "answer": "Threat information that has been aggregated, transformed, analyzed, interpreted, or enriched to provide the necessary context for decision-making processes."
   },
   {
     "question": "Threat Modeling",
-    "answer": "A systematic process of identifying potential threats to the application, ranking the  threats by risk, and selecting appropriate mitigations."
+    "answer": "A systematic process of identifying potential threats to the application, ranking the threats by risk, and selecting appropriate mitigations."
   },
   {
     "question": "Tokenization",
-    "answer": "The process of replacing a sensitive data element with a non-sensitive equivalent, referred to  as a token. The token may be constructed to look like the data it is replacing in format or simply appear as a random  appearing set of characters. Each token is unique to the data it is replacing, so the original data can be re-inserted into  the data set, or the original value represented by a token retrieved upon request."
+    "answer": "The process of replacing a sensitive data element with a non-sensitive equivalent, referred to as a token. The token may be constructed to look like the data it is replacing in format or simply appear as a random appearing set of characters. Each token is unique to the data it is replacing, so the original data can be re-inserted into the data set, or the original value represented by a token retrieved upon request."
   },
   {
     "question": "Transport Layer Security",
-    "answer": "A protocol used to secure communications in a wide variety of online trans- actions, such as financial transactions (e.g., banking, trading stocks, e-commerce), healthcare transactions (e.g., viewing  medical records or scheduling medical appointments), and social transactions (e.g., email or social networking). Any  network service that handles sensitive or valuable data, whether it is personally identifiable information (PII), financial  data, or login information, needs to adequately protect that data. Source: NIST SP 800-52"
+    "answer": "A protocol used to secure communications in a wide variety of online transactions, such as financial transactions (e.g., banking, trading stocks, e-commerce), healthcare transactions (e.g., viewing  medical records or scheduling medical appointments), and social transactions (e.g., email or social networking). Any network service that handles sensitive or valuable data, whether it is personally identifiable information (PII), financial data, or login information, needs to adequately protect that data. Source: NIST SP 800-52"
   },
   {
     "question": "Trusted Computing Base (TCB)",
-    "answer": "The collection of all the hardware, software, and firmware com- ponents within an architecture that is specifically responsible for enforcing a security policy."
+    "answer": "The collection of all the hardware, software, and firmware components within an architecture that is specifically responsible for enforcing a security policy."
   },
   {
     "question": "Type I Error",
-    "answer": "An instance in which a security tool or test incorrectly classifies benign content as malicious.  Also referred to as False Positives. Source: NIST SP 800-83 Rev. 1"
+    "answer": "An instance in which a security tool or test incorrectly classifies benign content as malicious. Also referred to as False Positives. Source: NIST SP 800-83 Rev. 1"
   },
   {
     "question": "Type II Error",
-    "answer": "Incorrectly classifying malicious activity or software defects as benign. Also referred to as False  Negatives."
+    "answer": "Incorrectly classifying malicious activity or software defects as benign. Also referred to as False Negatives."
   },
   {
     "question": "Type Safety",
-    "answer": "A reference to the capacity of a programming language to discourage/prevent data type related  issues such as unsafe type conversions/operations. Java is considered an example of a type of safe language. C is an  example of a type of unsafe language."
+    "answer": "A reference to the capacity of a programming language to discourage/prevent data type related issues such as unsafe type conversions/operations. Java is considered an example of a type of safe language. C is an example of a type of unsafe language."
   },
   {
     "question": "Unit testing",
-    "answer": "A type of software testing that focuses on testing units of code in isolation and is conducted  by software developers during the implementation (coding) phase of the life cycle. Dependencies of the code being  tested in isolation are addressed through creation of drivers and stubs."
+    "answer": "A type of software testing that focuses on testing units of code in isolation and is conducted by software developers during the implementation (coding) phase of the life cycle. Dependencies of the code being tested in isolation are addressed through creation of drivers and stubs."
   },
   {
     "question": "Verification",
-    "answer": "The process of producing objective evidence that sufficiently demonstrates that a system  satisfies its security requirements and security characteristics with the level of assurance that applies to the system."
+    "answer": "The process of producing objective evidence that sufficiently demonstrates that a system satisfies its security requirements and security characteristics with the level of assurance that applies to the system."
   },
   {
     "question": "Virtualization",
-    "answer": "The creation of a virtual version of an actual piece of technology, such as an operating  system (OS), a server, a storage device or a network resource. Uses software that simulates hardware functionality to"
+    "answer": "The creation of a virtual version of an actual piece of technology, such as an operating system (OS), a server, a storage device or a network resource. Uses software that simulates hardware functionality to create a virtual system. This practice lets IT organizations run multiple OSes, more than one virtual system and various applications on a single server."
   },
   {
     "question": "Vulnerability",
-    "answer": "Weakness in an information system, system security procedure, internal control, or imple- mentation that could be exploited by a threat source. Source: NIST SP 800-30 Rev 1"
+    "answer": "Weakness in an information system, system security procedure, internal control, or implementation that could be exploited by a threat source. Source: NIST SP 800-30 Rev 1"
   },
   {
     "question": "Vulnerability Assessment",
-    "answer": "Systematic examination of an information system or product to determine  the adequacy of security measures, identify security deficiencies, provide data to help predict the effectiveness of  proposed security measures, and confirm the adequacy of such measures after implementation."
+    "answer": "Systematic examination of an information system or product to determine the adequacy of security measures, identify security deficiencies, provide data to help predict the effectiveness of proposed security measures, and confirm the adequacy of such measures after implementation."
   },
   {
     "question": "Vulnerability scanner (software)",
-    "answer": "A software tool (commercial or open source) that is specially  designed for uncovering weaknesses and vulnerabilities in software."
+    "answer": "A software tool (commercial or open source) that is specially designed for uncovering weaknesses and vulnerabilities in software."
   },
   {
     "question": "White-box testing",
-    "answer": "A test methodology that assumes explicit and substantial knowledge of the internal  structure and implementation detail of the assessment object. It may also be referred to as \"full-knowledge testing\"  and is best suited for uncovering certain types of vulnerabilities in software. Source: csrc.nist.gov/glossary"
+    "answer": "A test methodology that assumes explicit and substantial knowledge of the internal structure and implementation detail of the assessment object. It may also be referred to as \"full-knowledge testing\" and is best suited for uncovering certain types of vulnerabilities in software. Source: csrc.nist.gov/glossary"
   },
   {
     "question": "Work Factor",
-    "answer": "Estimate of the effort or time needed by a potential perpetrator, with specified expertise and  resources, to overcome a protective measure such as locks, passwords, and controls."
+    "answer": "Estimate of the effort or time needed by a potential perpetrator, with specified expertise and resources, to overcome a protective measure such as locks, passwords, and controls."
   },
   {
     "question": "Zero Trust",
-    "answer": "A collection of concepts and ideas designed to minimize uncertainty in enforcing accurate,  least privilege per-request access decisions in information systems and services in the face of a network viewed as  compromised. 16 / 16"
-  },
-  {
-    "question": "Change Control Board",
-    "answer": "A committee of stakeholders comprised of management and security lead- ership that reviews the change process and specific proposed changes that affect enterprise operations. It makes  final and binding decisions on implementing changes."
+    "answer": "A collection of concepts and ideas designed to minimize uncertainty in enforcing accurate, least privilege per-request access decisions in information systems and services in the face of a network viewed as compromised"
   }
 ]
